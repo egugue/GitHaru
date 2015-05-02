@@ -1,19 +1,17 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     def ext = rootProject.extensions.getByName("ext");
 
-    compileSdkVersion ext.getAt("androidCompileSdkVersion")
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
     buildToolsVersion ext.getAt("androidBuildToolsVersion")
 
     defaultConfig {
-        applicationId "htoyama.githaru"
         minSdkVersion ext.getAt("androidMinSdkVersion")
         targetSdkVersion ext.getAt("androidTargetSdkVersion")
         versionCode 1
         versionName "1.0"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -24,6 +22,4 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.0'
-    compile project(':infra')
 }
