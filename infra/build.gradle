@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     def androidExt = rootProject.ext.android
@@ -18,9 +19,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile project(':domain')
+
+    def le = rootProject.ext.library;
+
+    apt le.daggerCompiler
+    compile le.dagger
+    provided le.javaxAnnotation
+
+    compile le.retrofit
+    compile le.okhttp
+
+    compile le.commonLang
+    debugCompile 'com.squareup.retrofit:retrofit-mock:1.9.0'
+
+    testCompile le.junit
+    testCompile le.mockito
 }
