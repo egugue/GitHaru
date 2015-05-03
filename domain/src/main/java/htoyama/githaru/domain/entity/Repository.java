@@ -5,17 +5,30 @@ package htoyama.githaru.domain.entity;
  */
 public class Repository extends Entity {
 
-    public final String userName;
-    public final String repositoryName;
+    public final String name;
+    public final Owner owner;
 
-    public Repository(String userName, String repositoryName) {
-        this.userName = userName;
-        this.repositoryName = repositoryName;
+    public Repository(String repositoryName, Owner owner) {
+        this.name = repositoryName;
+        this.owner = owner;
     }
 
     @Override
     public boolean equals(Object target) {
         //TODO
         return false;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder b = new StringBuilder();
+        String n = "\n";
+
+        b.append(n + "------ Repository Detail -----" + n);
+        b.append("name = " + name + n);
+        b.append("owner = " + owner.toString() + n);
+        b.append("-------------------------------------");
+
+        return b.toString();
     }
 }

@@ -23,4 +23,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    def le = rootProject.ext.library;
+    compile le.commonLang
 }

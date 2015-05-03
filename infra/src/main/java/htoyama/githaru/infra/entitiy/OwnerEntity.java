@@ -2,30 +2,25 @@ package htoyama.githaru.infra.entitiy;
 
 import com.google.gson.annotations.SerializedName;
 
+
 /**
- *
+ *  Represents a Owner who manage a Github Contents in the infra layer.
  */
-public class RepositoryEntity {
+public class OwnerEntity {
 
-    public int id;
-
+    @SerializedName("login")
     public String name;
 
-    @SerializedName("full_name")
-    public String fullName;
-
-    public OwnerEntity owner;
+    public int id;
 
     @Override
     public String toString() {
         StringBuilder b = new StringBuilder();
         String n = "\n";
 
-        b.append(n + "------ Repository Entity Detail -----" + n);
-        b.append("id = "+ id + n);
+        b.append(n + "------ OwnerEntity Detail -----" + n);
         b.append("name = " + name + n);
-        b.append("fullName = " + fullName + n);
-        b.append("owner = " + owner.toString() + n);
+        b.append("id = "+ id + n);
         b.append("-------------------------------------");
 
         return b.toString();
