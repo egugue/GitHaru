@@ -12,6 +12,7 @@ import java.util.List;
 import htoyama.githaru.domain.entity.File;
 import htoyama.githaru.domain.entity.Gist;
 import htoyama.githaru.domain.entity.Owner;
+import htoyama.githaru.infra.entitiy.FileEntity;
 import htoyama.githaru.infra.entitiy.GistEntity;
 import htoyama.githaru.infra.entitiy.OwnerEntity;
 
@@ -20,6 +21,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyMap;
+import static org.mockito.Matchers.anyMapOf;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -47,7 +49,7 @@ public class GistEntityMapperTest {
     public void map_GistEntity() {
         when(mOwnerEntityMapper.map(any(OwnerEntity.class)))
                 .thenReturn(new Owner(FAKE_OWNER_NAME));
-        when(mFileEntityMapper.map(anyMap()))
+        when(mFileEntityMapper.map(anyMapOf(String.class, FileEntity.class)))
                 .thenReturn(new ArrayList<File>());
 
         Gist actual = sut.map(createFakeGistEntity());
