@@ -34,4 +34,6 @@ dependencies {
     apt le.daggerCompiler
     compile le.dagger
     provided le.javaxAnnotation
+
+    compile le.rxAndroid
 }
