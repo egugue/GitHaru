@@ -1,0 +1,12 @@
+language: android
+android:
+  components:
+    - build-tools-21.1.2
+    - android-19
+    - sysimg-19
+    - extra-android-support
+licenses:
+    - android-sdk-license-bcbbd656
+    - '.*intel.+'
+script:
+  - ./gradlew build 
