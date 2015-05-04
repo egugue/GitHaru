@@ -12,35 +12,65 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import htoyama.githaru.R;
 import htoyama.githaru.domain.entity.File;
 import htoyama.githaru.domain.entity.Gist;
-import htoyama.githaru.domain.entity.Owner;
 import htoyama.githaru.domain.entity.Repository;
 import htoyama.githaru.domain.repository.GistRepository;
 import htoyama.githaru.domain.repository.RepositoryRepository;
+import htoyama.githaru.domain.usecase.gist.GetGistDetail;
+import htoyama.githaru.presentation.internal.di.ActivityModule;
+import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
+import htoyama.githaru.presentation.internal.di.GistComponent;
+import rx.Subscription;
+import rx.android.app.AppObservable;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.schedulers.Schedulers;
 
 
 public class TopActivity extends AppCompatActivity {
 
-    @Inject
+    /*
+    @Inject RepositoryRepository mRepository;
+    @Inject GistRepository mGistRepository;
+    */
+    //TODO: remove
     RepositoryRepository mRepository;
+    GistRepository mGistRepository;
 
     @Inject
-    GistRepository mGistRepository;
+    GetGistDetail mGetGistDetailUs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top);
 
-        AppComponent component = DaggerAppComponent.builder()
+        GistComponent component = DaggerGistComponent.builder()
+                .appComponent(GitharuApp.get(this).appComponent())
+                .activityModule(new ActivityModule(this))
                 .build();
 
         component.inject(this);
 
         //getGistList();
         //getGist();
+
+        Subscription sub;
+        sub = AppObservable.bindActivity(this, mGetGistDetailUs.execute("b34506680e8f9f9c7340"))
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<Gist>() {
+                    @Override
+                    public void call(Gist gist) {
+                        Log.d("HOGE", gist.toString());
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable throwable) {
+                        throwable.printStackTrace();
+                    }
+                });
 
         setupCreateGist();
         setupEditGist();
@@ -195,4 +225,5 @@ public class TopActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
