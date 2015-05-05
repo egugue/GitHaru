@@ -40,7 +40,7 @@ public class DeleteGistTest {
         sut.execute(FAKE_ID).subscribe(mTestSubscriber);
 
         mTestSubscriber.awaitTerminalEvent();
-        mTestSubscriber.getOnErrorEvents();
+        mTestSubscriber.assertNoErrors();
         mTestSubscriber.assertTerminalEvent();
     }
 
