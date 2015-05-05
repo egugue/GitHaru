@@ -48,4 +48,11 @@
         <item name="android:textSize">@dimen/text_caption</item>
     </style>
 
+    <!-- Floating Action Button -->
+    <style name="App.FloatingActionButton" parent="">
+        <item name="android:background">@drawable/fab_normal</item>
+        <item name="android:layout_marginRight">@dimen/fab_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/fab_margin_bottom</item>
+    </style>
+
 </resources>

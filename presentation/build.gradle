@@ -13,6 +13,7 @@ android {
         targetSdkVersion androidExt.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -21,19 +22,48 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
 }
 
 dependencies {
+    def le = rootProject.ext.library;
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.0'
     compile project(':infra')
     compile project(':domain')
 
-    def le = rootProject.ext.library;
+    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile 'com.android.support:cardview-v7:22.1.0'
+    compile 'com.android.support:recyclerview-v7:22.1.0'
 
-    apt le.daggerCompiler
-    compile le.dagger
+    compile  le.dagger
+    apt      le.daggerCompiler
     provided le.javaxAnnotation
 
     compile le.rxAndroid
+
+    //mockito
+    androidTestCompile le.mockito
+    androidTestCompile "com.google.dexmaker:dexmaker:1.2"
+    androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
+
+    androidTestApt le.daggerCompiler
+
+    //espresso
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.1') {
+        exclude group: 'javax.inject'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile('com.android.support.test:runner:0.2') {
+        exclude group: 'javax.inject'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile('com.android.support.test:rules:0.2') {
+        exclude group: 'javax.inject'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
 }

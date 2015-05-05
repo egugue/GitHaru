@@ -1,215 +1,74 @@
 package htoyama.githaru.presentation.view.activity;
 
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-import java.util.Arrays;
 import java.util.List;
 
 import javax.inject.Inject;
 
-import htoyama.githaru.domain.entity.File;
 import htoyama.githaru.domain.entity.Gist;
-import htoyama.githaru.domain.entity.Repository;
-import htoyama.githaru.domain.repository.GistRepository;
-import htoyama.githaru.domain.repository.RepositoryRepository;
-import htoyama.githaru.domain.usecase.gist.GetGistDetail;
+import htoyama.githaru.domain.usecase.gist.GetGistList;
 import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
-import htoyama.githaru.presentation.internal.di.ActivityModule;
 import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
 import htoyama.githaru.presentation.internal.di.GistComponent;
+import htoyama.githaru.presentation.view.adapter.GistAdapter;
 import rx.Subscription;
-import rx.android.app.AppObservable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 
 public class TopActivity extends BaseActivity {
-
-    /*
-    @Inject RepositoryRepository mRepository;
-    @Inject GistRepository mGistRepository;
-    */
-    //TODO: remove
-    RepositoryRepository mRepository;
-    GistRepository mGistRepository;
+    private GistAdapter mListAdapter;
+    private GistComponent mGistComponent;
 
     @Inject
-    GetGistDetail mGetGistDetailUs;
+    GetGistList mGetGistList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top);
 
-        GistComponent component = DaggerGistComponent.builder()
-                .appComponent(GitharuApp.get(this).appComponent())
-                .activityModule(new ActivityModule(this))
-                .build();
+        setupComponent();
+        mGistComponent.inject(this);
+        setupList();
 
-        component.inject(this);
-
-        //getGistList();
-        //getGist();
-
-        Subscription sub;
-        sub = AppObservable.bindActivity(this, mGetGistDetailUs.execute("b34506680e8f9f9c7340"))
+        Subscription sub = bind(mGetGistList.execute("egugue"))
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<Gist>() {
+                .subscribe(new Action1<List<Gist>>() {
                     @Override
-                    public void call(Gist gist) {
-                        Log.d("HOGE", gist.toString());
+                    public void call(List<Gist> gists) {
+                        mListAdapter.setItemList(gists);
                     }
                 }, new Action1<Throwable>() {
                     @Override
                     public void call(Throwable throwable) {
-                        throwable.printStackTrace();
+
                     }
                 });
 
-        setupCreateGist();
-        setupEditGist();
-        setupDeleteGist();
+        addSubscription(sub);
     }
 
-    public void getRepositoryList() {
-        Runnable command = new Runnable() {
-            @Override
-            public void run() {
-                List<Repository> list = mRepository.getList("egugue");
-                for (Repository repo : list) {
-                    Log.d("HOGE", repo.toString());
-                }
-            }
-        };
-
-        new Thread(command).start();
+    private void setupComponent() {
+        mGistComponent = DaggerGistComponent.builder()
+                .appComponent(GitharuApp.get(this).appComponent())
+                .build();
     }
 
-    public void setupCreateGist() {
-        final Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                File file = new File();
-                file.content = "test1";
-                file.name = "title1";
+    private void setupList() {
+        mListAdapter = new GistAdapter(this);
 
-                File file2 = new File();
-                file2.content = "text2";
-                file2.name = "title2";
-
-
-                Gist gist = new Gist("-1");
-                gist.fileList = Arrays.asList(file, file2);
-                gist.isPublic = true;
-                gist.description = "test";
-
-                mGistRepository.create(gist);
-            }
-        };
-
-        findViewById(R.id.create_gist_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new Thread(runnable).start();
-            }
-        });
-    }
-
-    public void setupEditGist() {
-        final Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                File file = new File();
-                file.content = "edit11";
-                file.name = "edit1";
-
-                File file2 = new File();
-                file2.content = "edit22";
-                file2.name = "edit2";
-
-                Gist gist = new Gist("b34506680e8f9f9c7340");
-                gist.fileList = Arrays.asList(file, file2);
-                gist.isPublic = true;
-                gist.description = "edit";
-
-                mGistRepository.edit(gist);
-            }
-        };
-
-        findViewById(R.id.edit_gist_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new Thread(runnable).start();
-            }
-        });
-    }
-
-    public void setupDeleteGist() {
-        final Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                mGistRepository.delete("8912fedab44d17cfc881");
-            }
-        };
-
-        findViewById(R.id.delete_gist_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new Thread(runnable).start();
-            }
-        });
-    }
-
-    public void getGist() {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                Gist gist = mGistRepository.get("1cb6927d924efb0f51e1");
-                Log.d("HOGE", gist.toString());
-            }
-        };
-
-        new Thread(runnable).start();
-    }
-
-    public void getGistList() {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                List<Gist> list = mGistRepository.getList("egugue");
-                for (Gist gist : list) {
-                    Log.d("HOGE", gist.toString());
-                }
-
-            }
-        };
-
-        new Thread(runnable).start();
-    }
-
-    public void deleteRepository() {
-        /*
-        findViewById(R.id.delete_gist_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Owner owner = new Owner("egugue");
-                        Repository repo = new Repository("test", owner);
-                        mRepository.delete(repo);
-                    }
-                }).start();
-            }
-        });
-        */
+        RecyclerView list = (RecyclerView) findViewById(R.id.gist_list);
+        list.setAdapter(mListAdapter);
+        list.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override

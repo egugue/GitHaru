@@ -12,4 +12,15 @@
     <dimen name="text_caption">12sp</dimen>
     <dimen name="text_button">14sp</dimen>
 
+    <!-- Floating Action Button -->
+    <dimen name="fab_width">56dp</dimen>
+    <dimen name="fab_height">56dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+    <dimen name="fab_margin_right">16dp</dimen>
+
+    <dimen name="card_padding_top">24dp</dimen>
+    <dimen name="card_padding_left">16dp</dimen>
+    <dimen name="card_padding_right">16dp</dimen>
+    <dimen name="card_padding_bottom">16dp</dimen>
+
 </resources>
