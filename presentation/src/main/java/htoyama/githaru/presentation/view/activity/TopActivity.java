@@ -1,7 +1,6 @@
-package htoyama.githaru.presentation;
+package htoyama.githaru.presentation.view.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +17,8 @@ import htoyama.githaru.domain.entity.Repository;
 import htoyama.githaru.domain.repository.GistRepository;
 import htoyama.githaru.domain.repository.RepositoryRepository;
 import htoyama.githaru.domain.usecase.gist.GetGistDetail;
+import htoyama.githaru.presentation.GitharuApp;
+import htoyama.githaru.presentation.R;
 import htoyama.githaru.presentation.internal.di.ActivityModule;
 import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
 import htoyama.githaru.presentation.internal.di.GistComponent;
@@ -28,7 +29,7 @@ import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 
-public class TopActivity extends AppCompatActivity {
+public class TopActivity extends BaseActivity {
 
     /*
     @Inject RepositoryRepository mRepository;

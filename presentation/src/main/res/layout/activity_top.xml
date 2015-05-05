@@ -5,6 +5,8 @@
     android:orientation="vertical"
     tools:context=".TopActivity">
 
+    <include layout="@layout/include_toolbar"/>
+
     <TextView
         android:text="@string/hello_world"
         android:layout_width="wrap_content"
