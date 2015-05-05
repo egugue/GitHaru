@@ -14,7 +14,8 @@ import htoyama.githaru.infra.entitiy.FileEntity;
  */
 public class GistRequest {
 
-    public String description;
+    @SerializedName("description")
+    public String title;
 
     @SerializedName("public")
     public boolean isPublic;
@@ -26,7 +27,7 @@ public class GistRequest {
      */
     public static GistRequest with(Gist gist) {
         GistRequest request = new GistRequest();
-        request.description = gist.description;
+        request.title = gist.title;
         request.isPublic = gist.isPublic;
 
         Map<String, FileEntity> map = new HashMap<>();
