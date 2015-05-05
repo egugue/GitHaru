@@ -3,12 +3,16 @@ package htoyama.githaru.presentation.view.activity;
 import android.os.SystemClock;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
+import android.util.Log;
+
+import com.squareup.spoon.Spoon;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -26,6 +30,7 @@ import htoyama.githaru.testutil.TestUtil;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.mockito.Matchers.anyString;
@@ -56,15 +61,16 @@ public class TopActivityTest {
     }
 
     @Test
-    public void hoge () {
+    public void toolbar_isDisplayed() {
         when(mGistRepository.getList(anyString()))
                 .thenReturn(fakeGistList());
 
-        mActivityTestRule.launchActivity(null);
+        TopActivity activity = mActivityTestRule.launchActivity(null);
+        Spoon.screenshot(activity, "start");
 
         SystemClock.sleep(3000);
 
-        onView(withId(R.id.toolbar)).check(matches(withText("hoge")));
+        onView(withId(R.id.toolbar)).check(matches(isDisplayed()));
     }
 
     private List<Gist> fakeGistList() {
