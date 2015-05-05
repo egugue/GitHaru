@@ -1,8 +1,38 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+<!-- ~~~~~~~~~~~~~~~   TextAppearance  ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- http://www.google.com/design/spec/style/typography.html#typography-styles -->
+    <style name="App.TextAppearance" parent="TextAppearance.AppCompat" />
+
+    <style name="App.TextAppearance.Headline">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_headline</item>
+    </style>
+
+    <style name="App.TextAppearance.Title">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+
+    <style name="App.TextAppearance.Subhead">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_subhead</item>
+    </style>
+
+    <style name="App.TextAppearance.Body" />
+
+    <style name="App.TextAppearance.Body.Primary">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_body1</item>
+    </style>
+
+    <style name="App.TextAppearance.Body.Primary.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="App.TextAppearance.Caption">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_caption</item>
     </style>
 
 </resources>
