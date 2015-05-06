@@ -8,11 +8,11 @@ import android.util.Log;
 import com.squareup.spoon.Spoon;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,8 +31,8 @@ import htoyama.githaru.testutil.TestUtil;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static android.support.test.espresso.matcher.ViewMatchers.withChild;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
-import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
 
@@ -43,7 +43,7 @@ public class TopActivityTest {
     GistRepository mGistRepository;
 
     @Rule
-    public ActivityTestRule<TopActivity> mActivityTestRule =new ActivityTestRule<>(
+    public ActivityTestRule<TopActivity> mActivityTestRule = new ActivityTestRule<>(
             TopActivity.class,
             true,
             false
@@ -71,6 +71,23 @@ public class TopActivityTest {
         SystemClock.sleep(3000);
 
         onView(withId(R.id.toolbar)).check(matches(isDisplayed()));
+    }
+
+    @Ignore()
+    @Test
+    public void drawer_closeDrawer_whenBackKeyPressedInStateOfOpenDrawer() {
+        setDefalutRepository();
+
+        TopActivity activity = mActivityTestRule.launchActivity(null);
+
+        //onView(withId(android.R.id.home)).perform(click());
+        SystemClock.sleep(3000);
+    }
+
+    private void setDefalutRepository() {
+        //no connect internet for executing test quickly
+        when(mGistRepository.getList(anyString()))
+                .thenReturn(fakeGistList());
     }
 
     private List<Gist> fakeGistList() {

@@ -1,10 +1,14 @@
 package htoyama.githaru.presentation.view.activity;
 
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import java.util.List;
 
@@ -38,6 +42,7 @@ public class TopActivity extends BaseActivity {
         setupComponent();
         mGistComponent.inject(this);
         setupList();
+        setupNavDrawer();
 
         Subscription sub = bind(mGetGistList.execute("egugue"))
                 .subscribeOn(Schedulers.io())
@@ -69,6 +74,45 @@ public class TopActivity extends BaseActivity {
         RecyclerView list = (RecyclerView) findViewById(R.id.gist_list);
         list.setAdapter(mListAdapter);
         list.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    private void setupNavDrawer() {
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
+        mDrawerLayout.setStatusBarBackgroundColor(
+                getResources().getColor(R.color.theme_accent));
+
+        Toolbar toolbar = getToolbar();
+        toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDrawerLayout.openDrawer(Gravity.LEFT);
+            }
+        });
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mDrawerLayout.isDrawerOpen(Gravity.START)) {
+            mDrawerLayout.closeDrawer(Gravity.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    private DrawerLayout mDrawerLayout;
+
+    private static class NavdrawerDelegate {
+        private static DrawerLayout mNavDrawer;
+
+        public NavdrawerDelegate(DrawerLayout drawerLayout) {
+            mNavDrawer = drawerLayout;
+        }
+
+        public boolean isNavdrawerOpen() {
+            return mNavDrawer != null && mNavDrawer.isDrawerOpen(Gravity.START);
+        }
+
     }
 
     @Override

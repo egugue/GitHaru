@@ -9,9 +9,8 @@
 
     <item>
         <bitmap
-            android:src="@drawable/ic_add_white"
+            android:src="@drawable/ic_add"
             android:gravity="center"/>
     </item>
-
 
 </layer-list>

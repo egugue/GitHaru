@@ -10,4 +10,6 @@
     <color name="fab_normal">@color/deep_orange_a200</color>
     <color name="fab_pressed">@color/deep_orange_a400</color>
 
+    <color name="divider">@color/grey_300</color>
+
 </resources>
