@@ -9,9 +9,9 @@
         android:name="GitharuApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/App.Theme" >
         <activity
-            android:name="TopActivity"
+            android:name=".view.activity.TopActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

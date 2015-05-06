@@ -32,7 +32,7 @@ public class GistEntityMapper {
         Gist gist = new Gist(e.id);
 
         gist.owner = mOwnerEntityMapper.map(e.owner);
-        gist.description = e.description;
+        gist.title = e.title;
         gist.isPublic = e.isPublic;
         gist.fileList = mFileEntityMapper.map(e.files);
 

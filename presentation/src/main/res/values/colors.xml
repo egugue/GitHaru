@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_primary">@color/blue_grey_500</color>
+    <color name="theme_primary_dark">@color/blue_grey_700</color>
+    <color name="theme_accent">@color/deep_orange_a200</color>
+
+    <color name="text_primary">@color/grey_900</color>
+    <color name="text_secondary">@color/grey_600</color>
+
+    <color name="fab_normal">@color/deep_orange_a200</color>
+    <color name="fab_pressed">@color/deep_orange_a400</color>
+
+    <color name="divider">@color/grey_300</color>
+
+</resources>

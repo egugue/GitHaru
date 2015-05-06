@@ -34,4 +34,9 @@ public class GitharuApp extends Application {
                 .build();
     }
 
+    //visible for testing
+    public void setAppComponent(AppComponent component) {
+        mAppComponent = component;
+    }
+
 }
