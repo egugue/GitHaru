@@ -42,7 +42,7 @@ public class EditGistTest {
         sut.execute(gist).subscribe(mTestSubscriber);
 
         mTestSubscriber.awaitTerminalEvent();
-        mTestSubscriber.getOnErrorEvents();
+        mTestSubscriber.assertNoErrors();
         mTestSubscriber.assertTerminalEvent();
     }
 

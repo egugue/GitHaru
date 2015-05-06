@@ -1,5 +1,22 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.stanfy.spoon:spoon-gradle-plugin:1.0.2'
+    }
+}
+
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'spoon'
+
+// This section is optional
+spoon {
+    // for debug output
+    debug = true
+}
 
 android {
     def androidExt = rootProject.ext.android
@@ -13,6 +30,7 @@ android {
         targetSdkVersion androidExt.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -26,19 +44,66 @@ android {
         abortOnError false
     }
 
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    productFlavors {
+        spoon {
+            testInstrumentationRunner "htoyama.githaru.testutil.runner.SpoonInstrumentationTestRunner"
+        }
+    }
 }
 
 dependencies {
+    def le = rootProject.ext.library;
+
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.1.0'
     compile project(':infra')
     compile project(':domain')
 
-    def le = rootProject.ext.library;
+    compile 'com.android.support:appcompat-v7:22.1.0'
+    compile 'com.android.support:cardview-v7:22.1.0'
+    compile 'com.android.support:recyclerview-v7:22.1.0'
 
-    apt le.daggerCompiler
-    compile le.dagger
+    compile  le.dagger
+    apt      le.daggerCompiler
     provided le.javaxAnnotation
 
     compile le.rxAndroid
+
+    debugCompile 'com.facebook.stetho:stetho:1.1.1'
+
+    //mockito
+    androidTestCompile le.mockito
+    androidTestCompile "com.google.dexmaker:dexmaker:1.2"
+    androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
+
+    androidTestApt le.daggerCompiler
+
+    //espresso
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.1') {
+        exclude group: 'javax.inject'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile('com.android.support.test:runner:0.2') {
+        exclude group: 'javax.inject'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestCompile('com.android.support.test:rules:0.2') {
+        exclude group: 'javax.inject'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    /*
+    androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.1') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    */
+
+    //spoon
+    androidTestCompile 'com.squareup.spoon:spoon-client:1.1.9'
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/card_padding_left"
+        android:paddingTop="@dimen/card_padding_top"
+        android:paddingRight="@dimen/card_padding_right"
+        android:paddingBottom="@dimen/card_padding_bottom"
+        >
+
+        <TextView
+            android:id="@+id/gcv__created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="New Text"
+            android:textAppearance="@style/App.TextAppearance.Subhead"
+            />
+
+        <TextView
+            android:id="@+id/gcv___title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gcv__created"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="New Text"
+            android:textAppearance="@style/App.TextAppearance.Title"
+            />
+
+        <TextView
+            android:id="@+id/gcv___body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gcv___title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="hogehgoheogheogoehgegoehogheeoghegoe"
+            android:textAppearance="@style/App.TextAppearance.Body.Primary"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gcv___body"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/abc_btn_check_material"
+            android:tint="@color/deep_orange_a200"
+            />
+
+    </RelativeLayout>
+
+</merge>

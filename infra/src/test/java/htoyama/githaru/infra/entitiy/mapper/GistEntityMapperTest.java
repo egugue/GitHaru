@@ -27,7 +27,7 @@ import static org.mockito.Mockito.when;
 
 public class GistEntityMapperTest {
     private static final String FAKE_OWNER_NAME = "fake_owner_name";
-    private static final String FAKE_DESCRIPTION = "fake_description";
+    private static final String FAKE_TITLE = "fake_title";
     private static final boolean FAKE_IS_PUBLIC = true;
 
     private GistEntityMapper sut;
@@ -54,7 +54,7 @@ public class GistEntityMapperTest {
 
         Gist actual = sut.map(createFakeGistEntity());
 
-        assertThat(actual.description, is(FAKE_DESCRIPTION));
+        assertThat(actual.title, is(FAKE_TITLE));
         assertThat(actual.isPublic, is(FAKE_IS_PUBLIC));
         assertThat(actual.owner.name, is(FAKE_OWNER_NAME));
         assertThat(actual.fileList, is(instanceOf(List.class)));
@@ -75,7 +75,7 @@ public class GistEntityMapperTest {
 
     private GistEntity createFakeGistEntity() {
         GistEntity entity = new GistEntity();
-        entity.description =  FAKE_DESCRIPTION;
+        entity.title = FAKE_TITLE;
         entity.isPublic = FAKE_IS_PUBLIC;
         return entity;
     }

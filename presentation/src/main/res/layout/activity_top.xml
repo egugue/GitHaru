@@ -1,34 +1,41 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".TopActivity">
+    android:fitsSystemWindows="true"
+    >
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TopActivity">
 
-    <Button
-        android:id="@+id/create_gist_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="create gist"
-        />
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar"/>
 
-    <Button
-        android:id="@+id/edit_gist_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="edit gist"
-        />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gist_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            />
 
-    <Button
-        android:id="@+id/delete_gist_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="delete gist"
-        />
+        <ImageView
+            android:id="@+id/fab"
+            android:layout_width="@dimen/fab_width"
+            android:layout_height="@dimen/fab_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            style="@style/App.FloatingActionButton"
+            />
 
-</LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/include_side_nav"/>
+
+</android.support.v4.widget.DrawerLayout>

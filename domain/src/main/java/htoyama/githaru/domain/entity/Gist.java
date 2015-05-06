@@ -14,7 +14,7 @@ import java.util.List;
 public class Gist extends Entity {
 
     public final String id;
-    public String description;
+    public String title;
     public boolean isPublic;
     public Owner owner;
     public List<File> fileList = new ArrayList<>();
@@ -46,7 +46,7 @@ public class Gist extends Entity {
 
         b.append(n + "------ Gist Detail -----" + n);
         b.append("id = " + id + n);
-        b.append("description = " + description + n);
+        b.append("title = " + title + n);
         b.append("isPublic = " + isPublic + n);
         b.append("owner = " + owner.toString() + n);
         b.append("fileList = " + fileList.toString() + n);
