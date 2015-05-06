@@ -2,7 +2,7 @@ language: android
 android:
   components:
     - build-tools-22.0.1
-    - android-19
+    - android-22
     - sysimg-19
     - extra-android-support
 licenses:
