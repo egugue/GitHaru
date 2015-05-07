@@ -31,6 +31,7 @@ import rx.schedulers.Schedulers;
 public class TopActivity extends BaseActivity {
     private GistAdapter mListAdapter;
     private GistComponent mGistComponent;
+    private DrawerLayout mDrawerLayout;
 
     @Inject
     GetGistList mGetGistList;
@@ -118,21 +119,6 @@ public class TopActivity extends BaseActivity {
         } else {
             super.onBackPressed();
         }
-    }
-
-    private DrawerLayout mDrawerLayout;
-
-    private static class NavdrawerDelegate {
-        private static DrawerLayout mNavDrawer;
-
-        public NavdrawerDelegate(DrawerLayout drawerLayout) {
-            mNavDrawer = drawerLayout;
-        }
-
-        public boolean isNavdrawerOpen() {
-            return mNavDrawer != null && mNavDrawer.isDrawerOpen(Gravity.START);
-        }
-
     }
 
     @Override
