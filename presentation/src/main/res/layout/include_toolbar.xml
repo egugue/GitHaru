@@ -6,6 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="?actionBarSize"
     style="@style/App.Toolbar"
-    app:theme="@style/App.ToolbarThemeOverlay"
+    android:theme="@style/App.ToolbarThemeOverlay"
     app:popupTheme="@style/App.ToolBarPopupThemeOverlay"
     />
