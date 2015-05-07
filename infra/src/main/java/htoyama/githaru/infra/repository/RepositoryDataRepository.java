@@ -2,14 +2,12 @@ package htoyama.githaru.infra.repository;
 
 import android.util.Log;
 
-import java.util.Collections;
 import java.util.List;
 
 import javax.inject.Inject;
 
 import htoyama.githaru.domain.entity.Repository;
 import htoyama.githaru.domain.repository.RepositoryRepository;
-import htoyama.githaru.infra.Secret;
 import htoyama.githaru.infra.entitiy.RepositoryEntity;
 import htoyama.githaru.infra.entitiy.mapper.RepositoryEntityMapper;
 import htoyama.githaru.infra.exception.RetrofitApiException;
@@ -20,7 +18,8 @@ import retrofit.RetrofitError;
  * Created by toyamaosamuyu on 2015/05/03.
  */
 public class RepositoryDataRepository implements RepositoryRepository {
-    private static final String TAG = RepositoryDataRepository.class.getSimpleName();
+    //private static final String ACCESS_TOKEN = Secret.token;
+    private static final String ACCESS_TOKEN = "dummy_token";
 
     private final GithubApi mGithubApi;
     private final RepositoryEntityMapper mMapper;
@@ -64,7 +63,7 @@ public class RepositoryDataRepository implements RepositoryRepository {
 
     @Override
     public void delete(Repository repository) {
-        mGithubApi.deleteRepository(Secret.token,
+        mGithubApi.deleteRepository(ACCESS_TOKEN,
                 repository.owner.name,
                 repository.name
                 );
