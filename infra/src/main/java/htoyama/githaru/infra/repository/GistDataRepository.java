@@ -7,7 +7,6 @@ import javax.inject.Singleton;
 
 import htoyama.githaru.domain.entity.Gist;
 import htoyama.githaru.domain.repository.GistRepository;
-import htoyama.githaru.infra.Secret;
 import htoyama.githaru.infra.entitiy.GistEntity;
 import htoyama.githaru.infra.entitiy.mapper.GistEntityMapper;
 import htoyama.githaru.infra.net.GithubApi;
@@ -19,6 +18,8 @@ import htoyama.githaru.infra.net.request.GistRequest;
  */
 @Singleton
 public class GistDataRepository implements GistRepository {
+    //private static final String ACCESS_TOKEN = Secret.token;
+    private static final String ACCESS_TOKEN = "dummy_token";
     private final GistEntityMapper mMapper;
     private final GithubApi mGithubApi;
 
@@ -31,7 +32,7 @@ public class GistDataRepository implements GistRepository {
     @Override
     public List<Gist> getList(String userName) {
         List<GistEntity> list = mGithubApi.getGistList(
-                Secret.token, userName);
+                ACCESS_TOKEN, userName);
 
         return mMapper.map(list);
     }
@@ -45,7 +46,7 @@ public class GistDataRepository implements GistRepository {
 
     @Override
     public void create(Gist gist) {
-        mGithubApi.createGist(Secret.token,
+        mGithubApi.createGist(ACCESS_TOKEN,
                 GistRequest.with(gist));
     }
 
@@ -53,13 +54,14 @@ public class GistDataRepository implements GistRepository {
     public void edit(Gist gist) {
         GistRequest request = GistRequest.with(gist);
 
-        mGithubApi.editGist(Secret.token, gist.id,
+        mGithubApi.editGist(ACCESS_TOKEN,
+                gist.id,
                 GistRequest.with(gist));
     }
 
     @Override
     public void delete(String id) {
-        mGithubApi.deleteGist(Secret.token, id);
+        mGithubApi.deleteGist(ACCESS_TOKEN, id);
     }
 
 }
