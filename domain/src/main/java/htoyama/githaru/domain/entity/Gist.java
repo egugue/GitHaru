@@ -12,6 +12,7 @@ import java.util.List;
  * Represent a Gist in the domain layer.
  */
 public class Gist extends Entity {
+    public static final String NO_ASSINGED_ID = "";
 
     public final String id;
     public String title;

@@ -68,8 +68,6 @@ public class TopActivityTest {
         TopActivity activity = mActivityTestRule.launchActivity(null);
         Spoon.screenshot(activity, "start");
 
-        SystemClock.sleep(3000);
-
         onView(withId(R.id.toolbar)).check(matches(isDisplayed()));
     }
 

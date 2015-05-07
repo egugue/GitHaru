@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="htoyama.githaru.presentation.view.activity.GistEditActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar" />
+
+    <include
+        android:id="@+id/gist_edit_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/view_gist_edit" />
+
+    <Button
+        android:id="@+id/edit_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存する"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+
+</LinearLayout>
