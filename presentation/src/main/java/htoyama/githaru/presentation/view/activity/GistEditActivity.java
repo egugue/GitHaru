@@ -117,6 +117,10 @@ public class GistEditActivity extends BaseActivity {
         }
 
         String gistId = intent.getStringExtra(EXTRA_GIST_ID);
+        if (gistId == null) {
+            return null;
+        }
+
         return mGetGistDetail.execute(gistId);
     }
 
