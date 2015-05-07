@@ -3,95 +3,130 @@ package htoyama.githaru.presentation.view.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import javax.inject.Inject;
+
+import htoyama.githaru.domain.entity.Gist;
+import htoyama.githaru.domain.usecase.gist.EditGist;
+import htoyama.githaru.domain.usecase.gist.GetGistDetail;
+import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
+import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
+import htoyama.githaru.presentation.internal.di.GistComponent;
 import htoyama.githaru.presentation.view.widget.GistEditView;
 import rx.Observable;
+import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
-import rx.android.view.ViewObservable;
-import rx.android.widget.OnTextChangeEvent;
-import rx.android.widget.WidgetObservable;
 import rx.functions.Action1;
-import rx.functions.Func1;
-import rx.functions.Func2;
-import rx.subjects.BehaviorSubject;
+import rx.schedulers.Schedulers;
 
 public class GistEditActivity extends BaseActivity {
+    private static final String EXTRA_GIST_ID = "gist_id";
 
-    private EditText mGistTitleEt;
-    private EditText mFileNameEt;
-    private EditText mFileContentEt;
+    private GistComponent mGistComponent;
+    private GistEditView mGistEditView;
     private Button mSaveButton;
+
+    @Inject
+    EditGist mEditGist;
+
+    @Inject
+    GetGistDetail mGetGistDetail;
 
     public static Intent createIntent(Context context) {
         return new Intent(context, GistEditActivity.class);
+    }
+
+    public static Intent createIntent(Context context, String gistId) {
+        Intent intent = createIntent(context);
+        intent.putExtra(EXTRA_GIST_ID, gistId);
+        return intent;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gist_edit);
+        setupComponent();
+        mGistComponent.inject(this);
 
-        /*
-        mGistTitleEt = (EditText) findViewById(R.id.edit_gist_title);
-        mFileNameEt = (EditText) findViewById(R.id.edit_file_name);
-        mFileContentEt = (EditText) findViewById(R.id.edit_file_content);
-
-        createObservable();
-        */
+        mGistEditView = (GistEditView) findViewById(R.id.gist_edit_view);
         mSaveButton = (Button) findViewById(R.id.edit_save);
-        mSaveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "save", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        GistEditView editView = (GistEditView) findViewById(R.id.gist_edit_view);
-        editView.isValid().subscribe(new Action1<Boolean>() {
+        setupGistEditView();
+        setupSaveButton();
+    }
+
+    private void setupGistEditView() {
+        mGistEditView.isValid().subscribe(new Action1<Boolean>() {
             @Override
             public void call(Boolean isValid) {
                 mSaveButton.setEnabled(isValid);
             }
         });
-    }
 
-    private void createObservable() {
-        final Observable<String> gistTitle   = text(mGistTitleEt);
-        final Observable<String> fileContent = text(mFileContentEt);
+        Observable<Gist> gist = getGistFromIntent();
+        if (gist == null) {
+            return;
+        }
 
-        final Observable<Boolean> isValidAll;
-        isValidAll = Observable.combineLatest(gistTitle, fileContent,
-                new Func2<String, String, Boolean>() {
+        gist.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<Gist>() {
                     @Override
-                    public Boolean call(String gistTitle, String fileContent) {
-                        if (TextUtils.isEmpty(gistTitle)) {
-                            return false;
-                        }
-                        if (TextUtils.isEmpty(fileContent)) {
-                            return false;
-                        }
-                        return true;
+                    public void call(Gist gist) {
+                        mGistEditView.bind(gist);
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable throwable) {
+                        throwable.printStackTrace();
                     }
                 });
+    }
 
-        isValidAll.subscribe(new Action1<Boolean>() {
+    private void setupSaveButton() {
+        mSaveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editGist();
+            }
+        });
+    }
+
+    private Observable<Gist> getGistFromIntent() {
+        Intent intent = getIntent();
+        if (intent == null) {
+            return null;
+        }
+
+        String gistId = intent.getStringExtra(EXTRA_GIST_ID);
+        return mGetGistDetail.execute(gistId);
+    }
+
+    private void editGist() {
+        Gist gist = mGistEditView.getGist();
+        mEditGist.execute(gist)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<Void>() {
                     @Override
-                    public void call(final Boolean isValid) {
-                        Log.d("HOGE", Boolean.toString(isValid));
-                        mSaveButton.setEnabled(isValid);
+                    public void onCompleted() {
+                        Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
                     }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
+                    }
+
+                    @Override public void onNext(Void aVoid) {}
                 });
 
     }
@@ -111,18 +146,10 @@ public class GistEditActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public static Observable<String> text(TextView view) {
-        String currentText = String.valueOf(view.getText());
-        final BehaviorSubject<String> subject = BehaviorSubject.create(currentText);
-        view.addTextChangedListener(new TextWatcher() {
-            @Override public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) { }
-            @Override public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) { }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                subject.onNext(editable.toString());
-            }
-        });
-        return subject;
+    private void setupComponent() {
+        mGistComponent = DaggerGistComponent.builder()
+                .appComponent(GitharuApp.get(this).appComponent())
+                .build();
     }
+
 }

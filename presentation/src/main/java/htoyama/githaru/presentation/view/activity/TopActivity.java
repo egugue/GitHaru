@@ -43,6 +43,7 @@ public class TopActivity extends BaseActivity {
         mGistComponent.inject(this);
         setupList();
         setupNavDrawer();
+        setupFab();
 
         Subscription sub = bind(mGetGistList.execute("egugue"))
                 .subscribeOn(Schedulers.io())
@@ -60,6 +61,16 @@ public class TopActivity extends BaseActivity {
                 });
 
         addSubscription(sub);
+    }
+
+    private void setupFab() {
+        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(GistEditActivity
+                        .createIntent(getApplicationContext()));
+            }
+        });
     }
 
     private void setupComponent() {

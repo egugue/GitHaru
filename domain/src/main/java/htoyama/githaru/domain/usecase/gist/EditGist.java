@@ -31,7 +31,14 @@ public class EditGist {
             @Override
             public void call(Subscriber<? super Void> subscriber) {
                 try {
-                    mGistRepository.edit(gist);
+
+                    //TODO
+                    if (gist.id.equals(Gist.NO_ASSINGED_ID)) {
+                        mGistRepository.create(gist);
+                    } else {
+                        mGistRepository.edit(gist);
+                    }
+
                     subscriber.onCompleted();
                 } catch (Exception e) {
                     subscriber.onError(e);

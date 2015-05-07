@@ -2,6 +2,7 @@ package htoyama.githaru.presentation.internal.di;
 
 import dagger.Component;
 import htoyama.githaru.presentation.AppComponent;
+import htoyama.githaru.presentation.view.activity.GistEditActivity;
 import htoyama.githaru.presentation.view.activity.TopActivity;
 
 /**
@@ -29,4 +30,5 @@ public interface GistComponent extends AbstractActivityComponent {
 @PerActivity
 public interface GistComponent extends AbstractActivityComponent {
     void inject(TopActivity topActivity);
+    void inject(GistEditActivity activity);
 }
