@@ -1,5 +1,6 @@
 package htoyama.githaru.presentation.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -81,6 +82,14 @@ public class TopActivity extends BaseActivity {
 
     private void setupList() {
         mListAdapter = new GistAdapter(this);
+        mListAdapter.setOnItemClickListener(new GistAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Gist gist) {
+                Intent intent = GistEditActivity.createIntent(
+                        getApplicationContext(), gist.id);
+                startActivity(intent);
+            }
+        });
 
         RecyclerView list = (RecyclerView) findViewById(R.id.gist_list);
         list.setAdapter(mListAdapter);

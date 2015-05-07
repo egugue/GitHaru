@@ -12,6 +12,7 @@ import android.widget.Toast;
 import javax.inject.Inject;
 
 import htoyama.githaru.domain.entity.Gist;
+import htoyama.githaru.domain.usecase.gist.CreateGist;
 import htoyama.githaru.domain.usecase.gist.EditGist;
 import htoyama.githaru.domain.usecase.gist.GetGistDetail;
 import htoyama.githaru.presentation.GitharuApp;
@@ -21,6 +22,7 @@ import htoyama.githaru.presentation.internal.di.GistComponent;
 import htoyama.githaru.presentation.view.widget.GistEditView;
 import rx.Observable;
 import rx.Subscriber;
+import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
@@ -32,16 +34,23 @@ public class GistEditActivity extends BaseActivity {
     private GistEditView mGistEditView;
     private Button mSaveButton;
 
-    @Inject
-    EditGist mEditGist;
+    @Inject CreateGist mCreateGist;
+    @Inject EditGist mEditGist;
+    @Inject GetGistDetail mGetGistDetail;
 
-    @Inject
-    GetGistDetail mGetGistDetail;
-
+    /**
+     * Create intent for creating new gist.
+     */
     public static Intent createIntent(Context context) {
         return new Intent(context, GistEditActivity.class);
     }
 
+    /**
+     * Create intent for editing a gist.
+     *
+     * @param context Context
+     * @param gistId The gist id to edit.
+     */
     public static Intent createIntent(Context context, String gistId) {
         Intent intent = createIntent(context);
         intent.putExtra(EXTRA_GIST_ID, gistId);
@@ -52,8 +61,7 @@ public class GistEditActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gist_edit);
-        setupComponent();
-        mGistComponent.inject(this);
+        buildAndInjectComponent();
 
         mGistEditView = (GistEditView) findViewById(R.id.gist_edit_view);
         mSaveButton = (Button) findViewById(R.id.edit_save);
@@ -75,7 +83,8 @@ public class GistEditActivity extends BaseActivity {
             return;
         }
 
-        gist.subscribeOn(Schedulers.io())
+        Subscription sub;
+        sub = gist.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Gist>() {
                     @Override
@@ -88,6 +97,8 @@ public class GistEditActivity extends BaseActivity {
                         throwable.printStackTrace();
                     }
                 });
+
+        addSubscription(sub);
     }
 
     private void setupSaveButton() {
@@ -111,24 +122,33 @@ public class GistEditActivity extends BaseActivity {
 
     private void editGist() {
         Gist gist = mGistEditView.getGist();
-        mEditGist.execute(gist)
+
+        Observable<Void> execute = gist.id.equals(Gist.NO_ASSINGED_ID)
+                ? mCreateGist.execute(gist)
+                : mEditGist.execute(gist);
+
+        mSaveButton.setEnabled(false);
+        Subscription sub = execute
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<Void>() {
                     @Override
                     public void onCompleted() {
                         Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
+                        mSaveButton.setEnabled(true);
                     }
 
                     @Override
                     public void onError(Throwable e) {
                         Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
+                        mSaveButton.setEnabled(true);
                     }
 
                     @Override public void onNext(Void aVoid) {}
                 });
 
+        addSubscription(sub);
     }
 
     @Override
@@ -146,10 +166,12 @@ public class GistEditActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void setupComponent() {
+    private void buildAndInjectComponent() {
         mGistComponent = DaggerGistComponent.builder()
                 .appComponent(GitharuApp.get(this).appComponent())
                 .build();
+
+        mGistComponent.inject(this);
     }
 
 }

@@ -8,22 +8,21 @@ import rx.Observable;
 import rx.Subscriber;
 
 /**
- * A usecase for editing {@link Gist}.
+ * A usecase for creating {@link Gist}.
  */
-public class EditGist {
-
+public class CreateGist {
     private final GistRepository mGistRepository;
 
     @Inject
-    public EditGist(GistRepository repository) {
+    public CreateGist(GistRepository repository) {
         mGistRepository = repository;
     }
 
     /**
-     * Edits {@link Gist}.
+     * Create {@link htoyama.githaru.domain.entity.Gist}.
      *
-     * @param gist The gist to edit.
-     * @return an {@link Observable} which will notify edit complete event.
+     * @param gist The gist to create.
+     * @return an {@link rx.Observable} which will notify create complete event.
      * If failed, this will emit {@link Throwable}.
      */
     public Observable<Void> execute(final Gist gist) {
@@ -31,7 +30,7 @@ public class EditGist {
             @Override
             public void call(Subscriber<? super Void> subscriber) {
                 try {
-                    mGistRepository.edit(gist);
+                    mGistRepository.create(gist);
                     subscriber.onCompleted();
                 } catch (Exception e) {
                     subscriber.onError(e);

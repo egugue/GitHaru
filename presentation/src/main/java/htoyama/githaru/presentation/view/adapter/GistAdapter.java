@@ -32,7 +32,7 @@ public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder
         /**
          * Called when a list item has been clicked.
          */
-        void onItemClick();
+        void onItemClick(Gist gist);
     }
 
     public GistAdapter(Context context) {
@@ -86,7 +86,7 @@ public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder
             mGistCardView = view;
         }
 
-        public void bind(Gist gist,
+        public void bind(final Gist gist,
                          @Nullable final OnItemClickListener listener) {
             mGistCardView.setGist(gist);
 
@@ -97,7 +97,7 @@ public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder
             mGistCardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.onItemClick();
+                    listener.onItemClick(gist);
                 }
             });
         }

@@ -5,6 +5,7 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -37,6 +38,8 @@ public class GistEditView extends LinearLayout {
     }
 
     public void bind(Gist gist) {
+        mGist = gist;
+
         //setup gist title
         String gistTitle = TextUtils.isEmpty(gist.title)
                 ? "gist:" + gist.id
@@ -57,6 +60,13 @@ public class GistEditView extends LinearLayout {
     }
 
     public Gist getGist() {
+        if (mGist != null) {
+            mGist.title = mGistTitleEt.getText().toString();
+            mGist.fileList.get(0).name = mFileNameEt.getText().toString();
+            mGist.fileList.get(0).content = mFileContentEt.getText().toString();
+            return mGist;
+        }
+
         //TODO: stub
         Gist gist = new Gist(Gist.NO_ASSINGED_ID);
         gist.title = "hoge";
@@ -65,7 +75,6 @@ public class GistEditView extends LinearLayout {
         file.content = "test gist content";
         file.name = "test title";
         gist.fileList.add(file);
-
         return gist;
     }
 
