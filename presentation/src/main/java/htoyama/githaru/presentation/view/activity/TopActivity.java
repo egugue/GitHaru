@@ -1,5 +1,6 @@
 package htoyama.githaru.presentation.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -30,6 +31,7 @@ import rx.schedulers.Schedulers;
 public class TopActivity extends BaseActivity {
     private GistAdapter mListAdapter;
     private GistComponent mGistComponent;
+    private DrawerLayout mDrawerLayout;
 
     @Inject
     GetGistList mGetGistList;
@@ -43,6 +45,7 @@ public class TopActivity extends BaseActivity {
         mGistComponent.inject(this);
         setupList();
         setupNavDrawer();
+        setupFab();
 
         Subscription sub = bind(mGetGistList.execute("egugue"))
                 .subscribeOn(Schedulers.io())
@@ -62,6 +65,16 @@ public class TopActivity extends BaseActivity {
         addSubscription(sub);
     }
 
+    private void setupFab() {
+        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(GistEditActivity
+                        .createIntent(getApplicationContext()));
+            }
+        });
+    }
+
     private void setupComponent() {
         mGistComponent = DaggerGistComponent.builder()
                 .appComponent(GitharuApp.get(this).appComponent())
@@ -70,6 +83,14 @@ public class TopActivity extends BaseActivity {
 
     private void setupList() {
         mListAdapter = new GistAdapter(this);
+        mListAdapter.setOnItemClickListener(new GistAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Gist gist) {
+                Intent intent = GistEditActivity.createIntent(
+                        getApplicationContext(), gist.id);
+                startActivity(intent);
+            }
+        });
 
         RecyclerView list = (RecyclerView) findViewById(R.id.gist_list);
         list.setAdapter(mListAdapter);
@@ -98,21 +119,6 @@ public class TopActivity extends BaseActivity {
         } else {
             super.onBackPressed();
         }
-    }
-
-    private DrawerLayout mDrawerLayout;
-
-    private static class NavdrawerDelegate {
-        private static DrawerLayout mNavDrawer;
-
-        public NavdrawerDelegate(DrawerLayout drawerLayout) {
-            mNavDrawer = drawerLayout;
-        }
-
-        public boolean isNavdrawerOpen() {
-            return mNavDrawer != null && mNavDrawer.isDrawerOpen(Gravity.START);
-        }
-
     }
 
     @Override
