@@ -30,7 +30,6 @@ import rx.schedulers.Schedulers;
 public class GistEditActivity extends BaseActivity {
     private static final String EXTRA_GIST_ID = "gist_id";
 
-    private GistComponent mGistComponent;
     private GistEditView mGistEditView;
     private Button mSaveButton;
 
@@ -66,6 +65,7 @@ public class GistEditActivity extends BaseActivity {
         mGistEditView = (GistEditView) findViewById(R.id.gist_edit_view);
         mSaveButton = (Button) findViewById(R.id.edit_save);
 
+        setupToolbar();
         setupGistEditView();
         setupSaveButton();
     }
@@ -99,6 +99,17 @@ public class GistEditActivity extends BaseActivity {
                 });
 
         addSubscription(sub);
+    }
+
+    private void setupToolbar() {
+        getToolbar().setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        getToolbar().setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(TopActivity.createIntent(
+                        getApplicationContext(), true));
+            }
+        });
     }
 
     private void setupSaveButton() {
@@ -171,11 +182,10 @@ public class GistEditActivity extends BaseActivity {
     }
 
     private void buildAndInjectComponent() {
-        mGistComponent = DaggerGistComponent.builder()
+        DaggerGistComponent.builder()
                 .appComponent(GitharuApp.get(this).appComponent())
-                .build();
-
-        mGistComponent.inject(this);
+                .build()
+                .inject(this);
     }
 
 }
