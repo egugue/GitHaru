@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.widget;
+package htoyama.githaru.presentation.view.gist;
 
 import android.content.Context;
 import android.support.v7.widget.CardView;
@@ -14,7 +14,7 @@ import htoyama.githaru.presentation.R;
 /**
  * Custom {@link CardView} class for showing Gist data.
  */
-public class GistCardView extends CardView {
+class GistCardView extends CardView {
     private TextView mTitleTextView;
     private TextView mBodyTextView;
     private TextView mCreatedTextView;

@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.activity;
+package htoyama.githaru.presentation.view.gist;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,9 +17,7 @@ import htoyama.githaru.domain.usecase.gist.EditGist;
 import htoyama.githaru.domain.usecase.gist.GetGistDetail;
 import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
-import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
-import htoyama.githaru.presentation.internal.di.GistComponent;
-import htoyama.githaru.presentation.view.widget.GistEditView;
+import htoyama.githaru.presentation.view.common.activity.BaseActivity;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;

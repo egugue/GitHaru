@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.activity;
+package htoyama.githaru.presentation.view.common.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.widget;
+package htoyama.githaru.presentation.view.gist;
 
 import android.content.Context;
 import android.text.Editable;
@@ -22,7 +22,7 @@ import rx.subjects.BehaviorSubject;
 /**
  *
  */
-public class GistEditView extends LinearLayout {
+class GistEditView extends LinearLayout {
     private EditText mGistTitleEt;
     private EditText mFileNameEt;
     private EditText mFileContentEt;

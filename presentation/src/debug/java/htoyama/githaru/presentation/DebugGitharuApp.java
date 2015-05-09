@@ -13,7 +13,7 @@ import static android.os.PowerManager.ON_AFTER_RELEASE;
 /**
  * {@link GitharuApp} for debug build.
  */
-public class DebugGitharApp extends GitharuApp {
+public class DebugGitharuApp extends GitharuApp {
 
     @Override
     public void onCreate() {
