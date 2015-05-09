@@ -6,6 +6,8 @@ import android.support.v4.view.ViewPropertyAnimatorListener;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.BounceInterpolator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -222,27 +224,29 @@ public class SlideInItemAnimator extends RecyclerView.ItemAnimator {
         final View view = holder.itemView;
         mAddAnimations.add(holder);
         final ViewPropertyAnimatorCompat animation = ViewCompat.animate(view);
-        animation.translationX(0).alpha(1).setDuration(getAddDuration()).
-        //animation.alpha(1).setDuration(getAddDuration()).
+        animation.translationX(0)
+                .alpha(1)
+                .setInterpolator(new AccelerateDecelerateInterpolator())
+                .setDuration(getAddDuration()).
                 setListener(new VpaListenerAdapter() {
-            @Override
-            public void onAnimationStart(View view) {
-                dispatchAddStarting(holder);
-            }
+                    @Override
+                    public void onAnimationStart(View view) {
+                        dispatchAddStarting(holder);
+                    }
 
-            @Override
-            public void onAnimationCancel(View view) {
-                ViewCompat.setAlpha(view, 1);
-            }
+                    @Override
+                    public void onAnimationCancel(View view) {
+                        ViewCompat.setAlpha(view, 1);
+                    }
 
-            @Override
-            public void onAnimationEnd(View view) {
-                animation.setListener(null);
-                dispatchAddFinished(holder);
-                mAddAnimations.remove(holder);
-                dispatchFinishedWhenDone();
-            }
-        }).start();
+                    @Override
+                    public void onAnimationEnd(View view) {
+                        animation.setListener(null);
+                        dispatchAddFinished(holder);
+                        mAddAnimations.remove(holder);
+                        dispatchFinishedWhenDone();
+                    }
+                }).start();
     }
 
     @Override

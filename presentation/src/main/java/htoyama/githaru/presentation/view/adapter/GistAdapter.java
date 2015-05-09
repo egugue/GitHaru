@@ -15,11 +15,9 @@ import htoyama.githaru.presentation.R;
 import htoyama.githaru.presentation.view.widget.GistCardView;
 
 /**
- * Adapter that manages a collectoin of {@link Gist}
+ * Adapter that manages a collection of {@link Gist}
  */
 public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder> {
-    private static final String TAG = GistAdapter.class.getSimpleName();
-
     private List<Gist> mList;
     private final LayoutInflater mInflater;
     private OnItemClickListener mListener;
@@ -50,6 +48,25 @@ public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder
     public void setItemList(List<Gist> itemList) {
         mList = itemList;
         notifyDataSetChanged();
+    }
+
+    /**
+     * Add item.
+     *
+     * @param gist The gist to add.
+     * @param position The position to insert in list.
+     */
+    public void add(Gist gist, int position) {
+        mList.add(position, gist);
+        notifyItemInserted(position);
+    }
+
+    /**
+     * Remove item.
+     */
+    public void remove(int position) {
+        mList.remove(position);
+        notifyItemRemoved(position);
     }
 
     /**
