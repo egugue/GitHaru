@@ -1,22 +1,19 @@
 package htoyama.githaru;
 
 import android.content.Context;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.support.test.InstrumentationRegistry;
 
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 import htoyama.githaru.presentation.BuildConfig;
 
 import static junit.framework.Assert.assertFalse;
+import static android.Manifest.permission.*;
 
 /**
- * Check Permisson.
+ * Check Permission.
  */
 public class PermissionTest {
 
@@ -27,42 +24,21 @@ public class PermissionTest {
             return;
         }
 
-        String writeExternalStorage = "android.permission.WRITE_EXTERNAL_STORAGE";
-        assertFalse(hasPermission(writeExternalStorage));
+        String target;
 
-        String disableKeyGurad = "android.permission.DISABLE_KEYGUARD";
-        assertFalse(hasPermission(disableKeyGurad));
+        target = WRITE_EXTERNAL_STORAGE;
+        assertFalse(hasPermission(target));
 
-        String wakeLock = "android.permission.WAKE_LOCK";
-        assertFalse(hasPermission(wakeLock));
+        target = DISABLE_KEYGUARD;
+        assertFalse(hasPermission(target));
+
+        target = WAKE_LOCK;
+        assertFalse(hasPermission(target));
     }
 
     private boolean hasPermission(String checkPermission) {
         Context context = InstrumentationRegistry.getTargetContext();
-
-        List<String> setPermissions = getPermissionList(context);
-
-        if (setPermissions == null) {
-            return false;
-        }
-
-        if (setPermissions.contains(checkPermission)) {
-            return true;
-        }
-
-        return false;
-    }
-
-    private List<String> getPermissionList(Context context) {
-        PackageManager packageManager = context.getPackageManager();
-        PackageInfo packageInfo = null;
-
-        try {
-            packageInfo = packageManager.getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS);
-        } catch (PackageManager.NameNotFoundException e) {
-            return null;
-        }
-
-        return Arrays.asList(packageInfo.requestedPermissions);
+        int result = context.checkCallingOrSelfPermission(checkPermission);
+        return result == PackageManager.PERMISSION_GRANTED;
     }
 }
