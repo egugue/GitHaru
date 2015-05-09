@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.internal.di;
+package htoyama.githaru.presentation.view.common.di;
 
 import java.lang.annotation.Retention;
 

@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.activity;
+package htoyama.githaru.presentation.view.gist;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,9 +20,8 @@ import htoyama.githaru.domain.entity.Gist;
 import htoyama.githaru.domain.usecase.gist.GetGistList;
 import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
-import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
-import htoyama.githaru.presentation.view.adapter.GistAdapter;
-import htoyama.githaru.presentation.view.widget.recyclerview.SlideInItemAnimator;
+import htoyama.githaru.presentation.view.common.activity.BaseActivity;
+import htoyama.githaru.presentation.view.common.widget.recyclerview.SlideInItemAnimator;
 import rx.Observable;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;

@@ -1,9 +1,8 @@
-package htoyama.githaru.presentation.view.activity;
+package htoyama.githaru.presentation.view.gist;
 
 import android.os.SystemClock;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.util.Log;
 
 import com.squareup.spoon.Spoon;
 
@@ -31,7 +30,6 @@ import htoyama.githaru.testutil.TestUtil;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static android.support.test.espresso.matcher.ViewMatchers.withChild;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;

@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.widget.recyclerview;
+package htoyama.githaru.presentation.view.common.widget.recyclerview;
 
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPropertyAnimatorCompat;
@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.BounceInterpolator;
 
 import java.util.ArrayList;
 import java.util.List;

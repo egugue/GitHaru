@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.activity;
+package htoyama.githaru.presentation.view.gist;
 
 import android.app.Activity;
 import android.content.Intent;

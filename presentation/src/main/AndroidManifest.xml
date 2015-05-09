@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:theme="@style/App.Theme" >
         <activity
-            android:name=".view.activity.TopActivity"
+            android:name=".view.gist.TopActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.activity.GistEditActivity"
+            android:name=".view.gist.GistEditActivity"
             android:label="@string/title_activity_gist_edit" >
         </activity>
     </application>

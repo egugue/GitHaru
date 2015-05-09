@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.adapter;
+package htoyama.githaru.presentation.view.gist;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -12,12 +12,11 @@ import java.util.List;
 
 import htoyama.githaru.domain.entity.Gist;
 import htoyama.githaru.presentation.R;
-import htoyama.githaru.presentation.view.widget.GistCardView;
 
 /**
  * Adapter that manages a collection of {@link Gist}
  */
-public class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder> {
+class GistAdapter extends RecyclerView.Adapter<GistAdapter.ItemViewHolder> {
     private List<Gist> mList;
     private final LayoutInflater mInflater;
     private OnItemClickListener mListener;

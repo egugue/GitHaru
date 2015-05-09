@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.widget;
+package htoyama.githaru.presentation.view.gist;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -14,6 +14,7 @@ import java.util.List;
 import htoyama.githaru.domain.entity.File;
 import htoyama.githaru.domain.entity.Gist;
 import htoyama.githaru.presentation.R;
+import htoyama.githaru.presentation.view.gist.GistEditView;
 import rx.observers.TestSubscriber;
 
 import static org.hamcrest.Matchers.is;
