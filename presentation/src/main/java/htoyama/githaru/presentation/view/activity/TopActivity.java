@@ -21,7 +21,6 @@ import htoyama.githaru.domain.usecase.gist.GetGistList;
 import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
 import htoyama.githaru.presentation.internal.di.DaggerGistComponent;
-import htoyama.githaru.presentation.internal.di.GistComponent;
 import htoyama.githaru.presentation.view.adapter.GistAdapter;
 import htoyama.githaru.presentation.view.widget.recyclerview.SlideInItemAnimator;
 import rx.Observable;
@@ -36,7 +35,6 @@ public class TopActivity extends BaseActivity {
 
     private RecyclerView mGistListView;
     private GistAdapter mListAdapter;
-    private GistComponent mGistComponent;
     private DrawerLayout mDrawerLayout;
 
     @Inject
@@ -59,8 +57,7 @@ public class TopActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top);
 
-        setupComponent();
-        mGistComponent.inject(this);
+        buildAndInjectComponent();
         setupList();
         setupNavDrawer();
         setupFab();
@@ -93,11 +90,11 @@ public class TopActivity extends BaseActivity {
         });
     }
 
-    //TODO: inject
-    private void setupComponent() {
-        mGistComponent = DaggerGistComponent.builder()
+    private void buildAndInjectComponent() {
+        DaggerGistComponent.builder()
                 .appComponent(GitharuApp.get(this).appComponent())
-                .build();
+                .build()
+                .inject(this);
     }
 
     private void setupList() {

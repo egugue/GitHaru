@@ -30,7 +30,6 @@ import rx.schedulers.Schedulers;
 public class GistEditActivity extends BaseActivity {
     private static final String EXTRA_GIST_ID = "gist_id";
 
-    private GistComponent mGistComponent;
     private GistEditView mGistEditView;
     private Button mSaveButton;
 
@@ -183,11 +182,10 @@ public class GistEditActivity extends BaseActivity {
     }
 
     private void buildAndInjectComponent() {
-        mGistComponent = DaggerGistComponent.builder()
+        DaggerGistComponent.builder()
                 .appComponent(GitharuApp.get(this).appComponent())
-                .build();
-
-        mGistComponent.inject(this);
+                .build()
+                .inject(this);
     }
 
 }
