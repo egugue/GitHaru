@@ -20,7 +20,7 @@ import static junit.framework.Assert.assertFalse;
  */
 public class PermissionTest {
 
-    @Ignore("ignore while product flavors expected for spoon")
+    @Ignore("ignore while not exit product flavors expected for spoon")
     @Test
     public void checkPermissino_if() {
         if (BuildConfig.BUILD_TYPE.equals("debug")) {
