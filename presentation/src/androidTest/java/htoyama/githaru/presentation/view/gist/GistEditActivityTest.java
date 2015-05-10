@@ -31,6 +31,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.*;
 import static android.support.test.espresso.assertion.ViewAssertions.*;
 import static org.hamcrest.Matchers.not;
 import static htoyama.githaru.testutil.TestUtil.getApplication;
+import static com.squareup.spoon.Spoon.screenshot;
 
 @RunWith(AndroidJUnit4.class)
 public class GistEditActivityTest {
@@ -73,23 +74,30 @@ public class GistEditActivityTest {
                 getApplication());
 
         Activity activity = mActivityTestRule.launchActivity(intent);
-        Spoon.screenshot(activity, "start__check_if_button_is_disable");
+        String scene;
 
+        scene = "start__check_if_button_is_disable";
+        screenshot(activity, scene);
+
+        scene = "type_gist_title";
         onView(withId(R.id.edit_gist_title)).perform(typeText("Gist Title"), closeSoftKeyboard());
         checkSaveButton(not(isEnabled()));
-        Spoon.screenshot(activity, "type_gist_title");
+        screenshot(activity, scene);
 
+        scene = "type_file_title";
         onView(withId(R.id.edit_file_name)).perform(typeText("File Title"), closeSoftKeyboard());
         checkSaveButton(not(isEnabled()));
-        Spoon.screenshot(activity, "type_file_title");
+        screenshot(activity, scene);
 
+        scene = "typed_file_content";
         onView(withId(R.id.edit_file_content)).perform(
                 typeText("file content hgoehg\noheogheohgoehgoehgoehgoehogehgoe\nhoge"),
                 closeSoftKeyboard());
-        Spoon.screenshot(activity, "typed_file_content");
+        screenshot(activity, scene);
 
+        scene = "finish__check_if_button_change_enable";
         checkSaveButton(isEnabled());
-        Spoon.screenshot(activity, "finish__check_if_button_change_enable");
+        screenshot(activity, scene);
     }
 
     private void checkSaveButton(Matcher<? super View> matcher) {

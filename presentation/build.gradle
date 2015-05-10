@@ -99,12 +99,12 @@ dependencies {
         exclude group: 'javax.inject'
         exclude group: 'com.android.support', module: 'support-annotations'
     }
-    /*
     androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.1') {
         exclude group: 'com.android.support', module: 'support-v4'
         exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude module: 'recyclerview-v7'
     }
-    */
 
     //spoon
     androidTestCompile 'com.squareup.spoon:spoon-client:1.1.9'
