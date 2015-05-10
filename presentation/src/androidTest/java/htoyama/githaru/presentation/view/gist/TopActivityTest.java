@@ -1,6 +1,8 @@
 package htoyama.githaru.presentation.view.gist;
 
 import android.os.SystemClock;
+import android.support.test.espresso.contrib.DrawerActions;
+import android.support.test.espresso.contrib.RecyclerViewActions;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -14,6 +16,7 @@ import org.junit.runner.RunWith;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.RecursiveAction;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -33,6 +36,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
+import static com.squareup.spoon.Spoon.screenshot;
 
 @RunWith(AndroidJUnit4.class)
 public class TopActivityTest {
@@ -60,28 +64,32 @@ public class TopActivityTest {
 
     @Test
     public void toolbar_isDisplayed() {
-        when(mGistRepository.getList(anyString()))
-                .thenReturn(fakeGistList());
-
-        TopActivity activity = mActivityTestRule.launchActivity(null);
-        Spoon.screenshot(activity, "start");
+        setDefalutRepository();
+        mActivityTestRule.launchActivity(null);
 
         onView(withId(R.id.toolbar)).check(matches(isDisplayed()));
     }
 
-    @Ignore()
     @Test
-    public void drawer_closeDrawer_whenBackKeyPressedInStateOfOpenDrawer() {
+    public void scenario() {
         setDefalutRepository();
-
         TopActivity activity = mActivityTestRule.launchActivity(null);
+        String scene;
 
-        //onView(withId(android.R.id.home)).perform(click());
-        SystemClock.sleep(3000);
+        scene = "start_activity";
+        screenshot(activity, scene);
+
+        scene = "open_drawer";
+        DrawerActions.openDrawer(R.id.nav_drawer);
+        screenshot(activity, scene);
+
+        scene = "close_drawer";
+        DrawerActions.closeDrawer(R.id.nav_drawer);
+        screenshot(activity, scene);
     }
 
     private void setDefalutRepository() {
-        //no connect internet for executing test quickly
+        //for avoiding falkey test, no connection to internet.
         when(mGistRepository.getList(anyString()))
                 .thenReturn(fakeGistList());
     }
