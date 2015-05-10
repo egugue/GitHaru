@@ -5,6 +5,7 @@ import android.app.KeyguardManager;
 import android.os.PowerManager;
 
 import com.facebook.stetho.Stetho;
+import com.squareup.leakcanary.LeakCanary;
 
 import static android.os.PowerManager.ACQUIRE_CAUSES_WAKEUP;
 import static android.os.PowerManager.FULL_WAKE_LOCK;
@@ -19,6 +20,7 @@ public class DebugGitharuApp extends GitharuApp {
     public void onCreate() {
         super.onCreate();
         setupStetho();
+        setupLeakCanary();
         wakeUpDevice();
     }
 
@@ -29,6 +31,10 @@ public class DebugGitharuApp extends GitharuApp {
                         .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(this))
                         .build());
 
+    }
+
+    private void setupLeakCanary() {
+        LeakCanary.install(this);
     }
 
     private void wakeUpDevice() {
