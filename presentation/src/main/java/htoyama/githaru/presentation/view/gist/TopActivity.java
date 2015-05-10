@@ -11,25 +11,20 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.List;
 
 import javax.inject.Inject;
 
 import htoyama.githaru.domain.entity.Gist;
-import htoyama.githaru.domain.usecase.gist.GetGistList;
 import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
 import htoyama.githaru.presentation.view.common.activity.BaseActivity;
 import htoyama.githaru.presentation.view.common.widget.recyclerview.SlideInItemAnimator;
-import rx.Observable;
-import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.schedulers.Schedulers;
 
 
-public class TopActivity extends BaseActivity {
+public class TopActivity extends BaseActivity implements GistListView {
     private static final String EXTRA_EDIT_COMPLETED = "edit_completed";
 
     private RecyclerView mGistListView;
@@ -37,7 +32,7 @@ public class TopActivity extends BaseActivity {
     private DrawerLayout mDrawerLayout;
 
     @Inject
-    GetGistList mGetGistList;
+    GistListPresenter mGistListPresenter;
 
     /**
      * Create intent for animating a latest gist.
@@ -61,22 +56,33 @@ public class TopActivity extends BaseActivity {
         setupNavDrawer();
         setupFab();
 
-        Subscription sub = bind(mGetGistList.execute("egugue"))
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<List<Gist>>() {
-                    @Override
-                    public void call(List<Gist> gists) {
-                        bindToGistList(gists);
-                    }
-                }, new Action1<Throwable>() {
-                    @Override
-                    public void call(Throwable throwable) {
+        addSubscription(mGistListPresenter);
+        mGistListPresenter.setup(this);
+        mGistListPresenter.loadGistList(isEditComplete());
+    }
 
-                    }
-                });
+    @Override
+    public void showLoading() {
+    }
 
-        addSubscription(sub);
+    @Override
+    public void hideLoading() {
+    }
+
+    @Override
+    public void showGistList(List<Gist> list) {
+        mListAdapter.setItemList(list);
+    }
+
+    @Override
+    public void showAdditionalGist(Gist gist) {
+        mListAdapter.add(gist, 0);
+        mGistListView.scrollToPosition(0);
+    }
+
+    @Override
+    public void showError(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     private void setupFab() {
@@ -128,29 +134,6 @@ public class TopActivity extends BaseActivity {
                 mDrawerLayout.openDrawer(Gravity.LEFT);
             }
         });
-    }
-
-    private void bindToGistList(List<Gist> gists) {
-        if (!isEditComplete()) {
-            mListAdapter.setItemList(gists);
-            return;
-        }
-
-        final Gist gist = gists.get(0);
-        gists.remove(0);
-        mListAdapter.setItemList(gists);
-
-        //do slide-in animation to latest gist.
-        Subscription sub = Observable.just(gist)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<Gist>() {
-                    @Override
-                    public void call(Gist gist) {
-                        mListAdapter.add(gist, 0);
-                        mGistListView.scrollToPosition(0);
-                    }
-                });
-        addSubscription(sub);
     }
 
     private boolean isEditComplete() {
