@@ -89,7 +89,7 @@ public class TopActivityTest {
     }
 
     private void setDefalutRepository() {
-        //for avoiding falkey test, no connection to internet.
+        //for avoiding flakey test, no connection to internet.
         when(mGistRepository.getList(anyString()))
                 .thenReturn(fakeGistList());
     }
