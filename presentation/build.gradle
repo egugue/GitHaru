@@ -61,8 +61,10 @@ dependencies {
     def le = rootProject.ext.library;
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':infra')
+    //compile project(':infra')
     compile project(':domain')
+    debugCompile   project(path: ':infra', configuration: 'debug')
+    releaseCompile project(path: ':infra', configuration: 'release')
 
     compile 'com.android.support:appcompat-v7:22.1.0'
     compile 'com.android.support:cardview-v7:22.1.0'
