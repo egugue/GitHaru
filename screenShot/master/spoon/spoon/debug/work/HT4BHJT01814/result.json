@@ -1,0 +1,3458 @@
+{
+  "installFailed": false,
+  "deviceDetails": {
+    "model": "Nexus 9",
+    "manufacturer": "htc",
+    "version": "5.0.1",
+    "apiLevel": 21,
+    "language": "en",
+    "region": "US",
+    "isEmulator": false
+  },
+  "testResults": [
+    [
+      {
+        "className": "htoyama.githaru.PermissionTest",
+        "methodName": "checkPermissino_if"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": []
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistCardViewTest",
+        "methodName": "title_setGivenTitle_whenTileIsSet"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:16.020",
+            "mMessage": "started: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.gist.GistCardViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:16.024",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20585",
+            "mAppName": "",
+            "mTag": "art",
+            "mTime": "05-11 02:20:16.033",
+            "mMessage": "Background sticky concurrent mark sweep GC freed 198992(7MB) AllocSpace objects, 0(0B) LOS objects, 30% free, 12MB/17MB, paused 4.477ms total 257.830ms"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:16.081",
+            "mMessage": "finished: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.gist.GistCardViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistCardViewTest",
+        "methodName": "title_setIdWithPrefixGist_whenTileIsEmpty"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:16.085",
+            "mMessage": "started: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.gist.GistCardViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:16.094",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:16.105",
+            "mMessage": "finished: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.gist.GistCardViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditActivityTest",
+        "methodName": "saveButton_disable_whenJustStartingInStateOfCreateGist"
+      },
+      {
+        "status": "PASS",
+        "duration": 1,
+        "screenshots": [
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/saveButton_disable_whenJustStartingInStateOfCreateGist/1431278417434_start.png"
+        ],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:16.112",
+            "mMessage": "started: saveButton_disable_whenJustStartingInStateOfCreateGist(htoyama.githaru.presentation.view.gist.GistEditActivityTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:16.114",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "ActivityInstrumentationRule",
+            "mTime": "05-11 02:20:16.126",
+            "mMessage": "Launching activity htoyama.githaru.presentation.view.gist.GistEditActivity"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20608",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:16.128",
+            "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:16.295",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: PRE_ON_CREATE"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:16.529",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: CREATED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:16.530",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: STARTED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:16.530",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: RESUMED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20616",
+            "mAppName": "",
+            "mTag": "OpenGLRenderer",
+            "mTime": "05-11 02:20:16.800",
+            "mMessage": "Render dirty regions requested: true"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "Atlas",
+            "mTime": "05-11 02:20:16.811",
+            "mMessage": "Validating map..."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "Choreographer",
+            "mTime": "05-11 02:20:17.080",
+            "mMessage": "Skipped 32 frames!  The application may be doing too much work on its main thread."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20616",
+            "mAppName": "",
+            "mTag": "OpenGLRenderer",
+            "mTime": "05-11 02:20:17.169",
+            "mMessage": "Initialized EGL, version 1.4"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20616",
+            "mAppName": "",
+            "mTag": "OpenGLRenderer",
+            "mTime": "05-11 02:20:17.242",
+            "mMessage": "Enabling debug mode 0"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:17.914",
+            "mMessage": "Captured screenshot \u0027start\u0027."
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "InputManagerEventInjectionStrategy",
+            "mTime": "05-11 02:20:17.937",
+            "mMessage": "Creating injection strategy with input manager."
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:18.012",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: PAUSED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:18.012",
+            "mMessage": "finished: saveButton_disable_whenJustStartingInStateOfCreateGist(htoyama.githaru.presentation.view.gist.GistEditActivityTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditActivityTest",
+        "methodName": "scenario"
+      },
+      {
+        "status": "PASS",
+        "duration": 7,
+        "screenshots": [
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278419164_start__check_if_button_is_disable.png",
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278421638_type_gist_title.png",
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278422827_type_file_title.png",
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278425201_typed_file_content.png",
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278425608_finish__check_if_button_change_enable.png"
+        ],
+        "animatedGif": "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario.gif",
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:18.029",
+            "mMessage": "started: scenario(htoyama.githaru.presentation.view.gist.GistEditActivityTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:18.032",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "ActivityInstrumentationRule",
+            "mTime": "05-11 02:20:18.036",
+            "mMessage": "Launching activity htoyama.githaru.presentation.view.gist.GistEditActivity"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20608",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:18.039",
+            "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:18.176",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: PRE_ON_CREATE"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:18.193",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: CREATED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:18.196",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: STARTED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:18.196",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: RESUMED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:19.270",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: STOPPED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:19.280",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@75da7e0 in: DESTROYED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:20.184",
+            "mMessage": "Captured screenshot \u0027start__check_if_button_is_disable\u0027."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:20.202",
+            "mMessage": "Performing \u0027type text(Gist Title)\u0027 action on view with id: htoyama.githaru:id/edit_gist_title"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "UiControllerImpl",
+            "mTime": "05-11 02:20:20.938",
+            "mMessage": "Injecting string: \"Gist Title\""
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:20.939",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:20.965",
+            "mMessage": "EventInjector:Injecting event for character (G) with key code (35) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.026",
+            "mMessage": "EventInjector:Injecting event for character (G) with key code (35) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.028",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.091",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.124",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.210",
+            "mMessage": "EventInjector:Injecting event for character (s) with key code (47) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.243",
+            "mMessage": "EventInjector:Injecting event for character (s) with key code (47) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.274",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.291",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.295",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.321",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.405",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.407",
+            "mMessage": "EventInjector:Injecting event for character (T) with key code (48) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.438",
+            "mMessage": "EventInjector:Injecting event for character (T) with key code (48) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.450",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.451",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.472",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.473",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.488",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.490",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.504",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.505",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:21.523",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683906069)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:21.527",
+            "mMessage": "Performing \u0027close keyboard\u0027 action on view with id: htoyama.githaru:id/edit_gist_title"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:22.011",
+            "mMessage": "Captured screenshot \u0027type_gist_title\u0027."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:22.012",
+            "mMessage": "Performing \u0027type text(File Title)\u0027 action on view with id: htoyama.githaru:id/edit_file_name"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "UiControllerImpl",
+            "mTime": "05-11 02:20:22.341",
+            "mMessage": "Injecting string: \"File Title\""
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.343",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.354",
+            "mMessage": "EventInjector:Injecting event for character (F) with key code (34) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.381",
+            "mMessage": "EventInjector:Injecting event for character (F) with key code (34) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.440",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.541",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.557",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.559",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.578",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.580",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.589",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.591",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.615",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.698",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.701",
+            "mMessage": "EventInjector:Injecting event for character (T) with key code (48) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.727",
+            "mMessage": "EventInjector:Injecting event for character (T) with key code (48) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.744",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (59) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.746",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.757",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.758",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.773",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.778",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.792",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.793",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:22.809",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683907472)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:22.811",
+            "mMessage": "Performing \u0027close keyboard\u0027 action on view with id: htoyama.githaru:id/edit_file_name"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:23.171",
+            "mMessage": "Captured screenshot \u0027type_file_title\u0027."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:23.172",
+            "mMessage": "Performing \u0027type text(file content hgoehg"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:23.172",
+            "mMessage": "oheogheohgoehgoehgoehgoehogehgoe"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:23.172",
+            "mMessage": "hoge)\u0027 action on view with id: htoyama.githaru:id/edit_file_content"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "UiControllerImpl",
+            "mTime": "05-11 02:20:23.477",
+            "mMessage": "Injecting string: \"file content hgoehg"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "UiControllerImpl",
+            "mTime": "05-11 02:20:23.477",
+            "mMessage": "oheogheohgoehgoehgoehgoehogehgoe"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "UiControllerImpl",
+            "mTime": "05-11 02:20:23.477",
+            "mMessage": "hoge\""
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.481",
+            "mMessage": "EventInjector:Injecting event for character (f) with key code (34) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.515",
+            "mMessage": "EventInjector:Injecting event for character (f) with key code (34) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.566",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.626",
+            "mMessage": "EventInjector:Injecting event for character (i) with key code (37) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.680",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.703",
+            "mMessage": "EventInjector:Injecting event for character (l) with key code (40) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.704",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.730",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.732",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.755",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.820",
+            "mMessage": "EventInjector:Injecting event for character (c) with key code (31) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.863",
+            "mMessage": "EventInjector:Injecting event for character (c) with key code (31) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.870",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.883",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.885",
+            "mMessage": "EventInjector:Injecting event for character (n) with key code (42) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.895",
+            "mMessage": "EventInjector:Injecting event for character (n) with key code (42) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.896",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.911",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.913",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.931",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.933",
+            "mMessage": "EventInjector:Injecting event for character (n) with key code (42) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.949",
+            "mMessage": "EventInjector:Injecting event for character (n) with key code (42) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.950",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.962",
+            "mMessage": "EventInjector:Injecting event for character (t) with key code (48) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:23.964",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.010",
+            "mMessage": "EventInjector:Injecting event for character ( ) with key code (62) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.012",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.127",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.143",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.163",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.165",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.177",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.182",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.194",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.197",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.212",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.216",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.242",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.248",
+            "mMessage": "EventInjector:Injecting event for character ("
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.248",
+            "mMessage": ") with key code (66) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.250",
+            "mMessage": "EventInjector:Injecting event for character ("
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.250",
+            "mMessage": ") with key code (66) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.292",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.382",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.387",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.407",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.409",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.425",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.427",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.441",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.446",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.461",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.464",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.480",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.484",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.511",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.513",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.530",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.533",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.543",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.548",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.561",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.565",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.578",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.581",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.595",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.597",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.612",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.615",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.628",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.632",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.646",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.647",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.662",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.664",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.680",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.681",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.695",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.698",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.712",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.715",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.729",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.731",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.747",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.749",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.764",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.766",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.781",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.784",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.797",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.801",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.814",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.817",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.829",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.835",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.863",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.889",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.913",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.918",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.932",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.936",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.950",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.954",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.980",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.982",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:24.996",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.001",
+            "mMessage": "EventInjector:Injecting event for character ("
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.001",
+            "mMessage": ") with key code (66) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.034",
+            "mMessage": "EventInjector:Injecting event for character ("
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.034",
+            "mMessage": ") with key code (66) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.066",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.085",
+            "mMessage": "EventInjector:Injecting event for character (h) with key code (36) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.099",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.114",
+            "mMessage": "EventInjector:Injecting event for character (o) with key code (43) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.116",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.132",
+            "mMessage": "EventInjector:Injecting event for character (g) with key code (35) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.134",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:25.149",
+            "mMessage": "EventInjector:Injecting event for character (e) with key code (33) downtime: (683908608)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:25.154",
+            "mMessage": "Performing \u0027close keyboard\u0027 action on view with id: htoyama.githaru:id/edit_file_content"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:25.605",
+            "mMessage": "Captured screenshot \u0027typed_file_content\u0027."
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:25.962",
+            "mMessage": "Captured screenshot \u0027finish__check_if_button_change_enable\u0027."
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:25.985",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: PAUSED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:25.995",
+            "mMessage": "finished: scenario(htoyama.githaru.presentation.view.gist.GistEditActivityTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "bind_fileIsEmpty_whenFileListIsEmpty"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.005",
+            "mMessage": "started: bind_fileIsEmpty_whenFileListIsEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.007",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.046",
+            "mMessage": "finished: bind_fileIsEmpty_whenFileListIsEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "bind_fileIsSetGivenFile_whenFileListIsSet"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.053",
+            "mMessage": "started: bind_fileIsSetGivenFile_whenFileListIsSet(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.056",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.076",
+            "mMessage": "finished: bind_fileIsSetGivenFile_whenFileListIsSet(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "bind_titleIsSetGivenTitle_whenGivenTitleIsSet"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.081",
+            "mMessage": "started: bind_titleIsSetGivenTitle_whenGivenTitleIsSet(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.085",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.092",
+            "mMessage": "finished: bind_titleIsSetGivenTitle_whenGivenTitleIsSet(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "bind_titleIsSetIdWithPrefixGist_whenTitleIsEmpty"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.094",
+            "mMessage": "started: bind_titleIsSetIdWithPrefixGist_whenTitleIsEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.099",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.103",
+            "mMessage": "finished: bind_titleIsSetIdWithPrefixGist_whenTitleIsEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "isValid_emitFalse_whenGitTitleAndFileContentAreEmpty"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.106",
+            "mMessage": "started: isValid_emitFalse_whenGitTitleAndFileContentAreEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.110",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.135",
+            "mMessage": "finished: isValid_emitFalse_whenGitTitleAndFileContentAreEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "isValid_emitFalse_whenGitTitleIsSetButFileContentIsEmpty"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.137",
+            "mMessage": "started: isValid_emitFalse_whenGitTitleIsSetButFileContentIsEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.140",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.144",
+            "mMessage": "finished: isValid_emitFalse_whenGitTitleIsSetButFileContentIsEmpty(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistEditViewTest",
+        "methodName": "isValid_emitTrue_whenGitTitleAndFileContentAreSet"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.149",
+            "mMessage": "started: isValid_emitTrue_whenGitTitleAndFileContentAreSet(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.151",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.155",
+            "mMessage": "finished: isValid_emitTrue_whenGitTitleAndFileContentAreSet(htoyama.githaru.presentation.view.gist.GistEditViewTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistListPresenterTest",
+        "methodName": "destroy_unsubscribe_whenDestroyInvoked"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.158",
+            "mMessage": "started: destroy_unsubscribe_whenDestroyInvoked(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.161",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.754",
+            "mMessage": "finished: destroy_unsubscribe_whenDestroyInvoked(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistListPresenterTest",
+        "methodName": "loadGistList_GivenFalse_whenFailure"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.762",
+            "mMessage": "started: loadGistList_GivenFalse_whenFailure(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.767",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.904",
+            "mMessage": "finished: loadGistList_GivenFalse_whenFailure(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistListPresenterTest",
+        "methodName": "loadGistList_GivenFalse_whenSuccess"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.925",
+            "mMessage": "started: loadGistList_GivenFalse_whenSuccess(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.929",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.989",
+            "mMessage": "finished: loadGistList_GivenFalse_whenSuccess(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistListPresenterTest",
+        "methodName": "loadGistList_GivenTrue_whenFailure"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:26.994",
+            "mMessage": "started: loadGistList_GivenTrue_whenFailure(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:26.997",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:27.054",
+            "mMessage": "finished: loadGistList_GivenTrue_whenFailure(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.GistListPresenterTest",
+        "methodName": "loadGistList_GivenTrue_whenSuccess"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:27.059",
+            "mMessage": "started: loadGistList_GivenTrue_whenSuccess(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:27.062",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:27.122",
+            "mMessage": "finished: loadGistList_GivenTrue_whenSuccess(htoyama.githaru.presentation.view.gist.GistListPresenterTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.TopActivityTest",
+        "methodName": "drawer_closeDrawer_whenBackKeyPressedInStateOfOpenDrawer"
+      },
+      {
+        "status": "PASS",
+        "duration": 5,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:27.132",
+            "mMessage": "started: drawer_closeDrawer_whenBackKeyPressedInStateOfOpenDrawer(htoyama.githaru.presentation.view.gist.TopActivityTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:27.140",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "ActivityInstrumentationRule",
+            "mTime": "05-11 02:20:27.267",
+            "mMessage": "Launching activity htoyama.githaru.presentation.view.gist.TopActivity"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20608",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:27.269",
+            "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:27.478",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: PRE_ON_CREATE"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:27.614",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: CREATED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:27.616",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: STARTED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:27.619",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: RESUMED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:28.149",
+            "mMessage": "Performing \u0027check drawer\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:28.158",
+            "mMessage": "Performing \u0027register idling drawer listener\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:28.175",
+            "mMessage": "Performing \u0027open drawer\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:28.260",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: STOPPED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:28.266",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@15a2115 in: DESTROYED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:28.606",
+            "mMessage": "Performing \u0027unregister idling drawer listener\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:28.618",
+            "mMessage": "Performing \u0027send keyCode: 4, metaState: 0 key event\u0027 action on view is a root view."
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:28.623",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (4) downtime: (683913749)"
+          },
+          {
+            "mLogLevel": "VERBOSE",
+            "mPid": "20572",
+            "mTid": "20662",
+            "mAppName": "",
+            "mTag": "ESP_TRACE",
+            "mTime": "05-11 02:20:28.643",
+            "mMessage": "EventInjector:Injecting event for character (��) with key code (4) downtime: (683913774)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:29.086",
+            "mMessage": "Performing \u0027actionOnItemAtPosition performing ViewAction: single click on item at position: 0\u0027 action on view with id: htoyama.githaru:id/gist_list"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:29.165",
+            "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:29.176",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: PAUSED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:29.209",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@18d17b98 in: PRE_ON_CREATE"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:29.306",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@18d17b98 in: CREATED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:29.307",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@18d17b98 in: STARTED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:29.307",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@18d17b98 in: RESUMED"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.363",
+            "mMessage": "java.lang.NullPointerException: Attempt to read from field \u0027java.lang.String htoyama.githaru.domain.entity.Gist.title\u0027 on a null object reference"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat htoyama.githaru.presentation.view.gist.GistEditView.bind(GistEditView.java:44)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat htoyama.githaru.presentation.view.gist.GistEditActivity$2.call(GistEditActivity.java:92)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat htoyama.githaru.presentation.view.gist.GistEditActivity$2.call(GistEditActivity.java:89)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.Observable$32.onNext(Observable.java:7187)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:130)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.internal.operators.NotificationLite.accept(NotificationLite.java:143)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.pollQueue(OperatorObserveOn.java:189)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.access$000(OperatorObserveOn.java:65)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber$2.call(OperatorObserveOn.java:153)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:47)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.os.Handler.handleCallback(Handler.java:739)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.os.Handler.dispatchMessage(Handler.java:95)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:467)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:408)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:226)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:138)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:118)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.action.Tap.sendSingleTap(Tap.java:135)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.action.Tap.access$100(Tap.java:35)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.action.Tap$1.sendTap(Tap.java:40)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:98)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.contrib.RecyclerViewActions$ActionOnItemAtPositionViewAction.perform(RecyclerViewActions.java:303)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat java.util.concurrent.FutureTask.run(FutureTask.java:237)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.os.Handler.handleCallback(Handler.java:739)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.os.Handler.dispatchMessage(Handler.java:95)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.os.Looper.loop(Looper.java:135)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat android.app.ActivityThread.main(ActivityThread.java:5221)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat java.lang.reflect.Method.invoke(Native Method)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat java.lang.reflect.Method.invoke(Method.java:372)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)"
+          },
+          {
+            "mLogLevel": "WARN",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "System.err",
+            "mTime": "05-11 02:20:29.395",
+            "mMessage": "\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:29.821",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: STOPPED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:32.647",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@19621923 in: DESTROYED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:32.649",
+            "mMessage": "finished: drawer_closeDrawer_whenBackKeyPressedInStateOfOpenDrawer(htoyama.githaru.presentation.view.gist.TopActivityTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.TopActivityTest",
+        "methodName": "scenario"
+      },
+      {
+        "status": "PASS",
+        "duration": 3,
+        "screenshots": [
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278433785_start_activity.png",
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278434637_open_drawer.png",
+          "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278435424_close_drawer.png"
+        ],
+        "animatedGif": "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario.gif",
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:32.713",
+            "mMessage": "started: scenario(htoyama.githaru.presentation.view.gist.TopActivityTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:32.741",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "ActivityInstrumentationRule",
+            "mTime": "05-11 02:20:32.742",
+            "mMessage": "Launching activity htoyama.githaru.presentation.view.gist.TopActivity"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20608",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:32.746",
+            "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:33.220",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@c56a309 in: PRE_ON_CREATE"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:33.274",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@c56a309 in: CREATED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:33.277",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@c56a309 in: STARTED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:33.277",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@c56a309 in: RESUMED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20593",
+            "mAppName": "",
+            "mTag": "art",
+            "mTime": "05-11 02:20:33.468",
+            "mMessage": "Explicit concurrent mark sweep GC freed 25412(1183KB) AllocSpace objects, 2(24MB) LOS objects, 40% free, 12MB/21MB, paused 840us total 169.995ms"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:33.964",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@18d17b98 in: STOPPED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:33.977",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.GistEditActivity@18d17b98 in: DESTROYED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20585",
+            "mAppName": "",
+            "mTag": "art",
+            "mTime": "05-11 02:20:34.073",
+            "mMessage": "Background partial concurrent mark sweep GC freed 7226(499KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 24MB/40MB, paused 5.668ms total 223.821ms"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:34.208",
+            "mMessage": "Captured screenshot \u0027start_activity\u0027."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:34.218",
+            "mMessage": "Performing \u0027check drawer\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:34.220",
+            "mMessage": "Performing \u0027register idling drawer listener\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:34.222",
+            "mMessage": "Performing \u0027open drawer\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:34.636",
+            "mMessage": "Performing \u0027unregister idling drawer listener\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:34.995",
+            "mMessage": "Captured screenshot \u0027open_drawer\u0027."
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:34.998",
+            "mMessage": "Performing \u0027check drawer\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:35.002",
+            "mMessage": "Performing \u0027register idling drawer listener\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:35.006",
+            "mMessage": "Performing \u0027close drawer\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "ViewInteraction",
+            "mTime": "05-11 02:20:35.421",
+            "mMessage": "Performing \u0027unregister idling drawer listener\u0027 action on view with id: htoyama.githaru:id/nav_drawer"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "Spoon",
+            "mTime": "05-11 02:20:35.759",
+            "mMessage": "Captured screenshot \u0027close_drawer\u0027."
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:35.790",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@c56a309 in: PAUSED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:35.800",
+            "mMessage": "finished: scenario(htoyama.githaru.presentation.view.gist.TopActivityTest)"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "className": "htoyama.githaru.presentation.view.gist.TopActivityTest",
+        "methodName": "toolbar_isDisplayed"
+      },
+      {
+        "status": "PASS",
+        "duration": 0,
+        "screenshots": [],
+        "log": [
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:35.846",
+            "mMessage": "started: toolbar_isDisplayed(htoyama.githaru.presentation.view.gist.TopActivityTest)"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:35.848",
+            "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "ActivityInstrumentationRule",
+            "mTime": "05-11 02:20:35.851",
+            "mMessage": "Launching activity htoyama.githaru.presentation.view.gist.TopActivity"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20608",
+            "mAppName": "",
+            "mTag": "MonitoringInstrumentation",
+            "mTime": "05-11 02:20:35.854",
+            "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:36.127",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@23888b7a in: PRE_ON_CREATE"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:36.153",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@23888b7a in: CREATED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:36.159",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@23888b7a in: STARTED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:36.159",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@23888b7a in: RESUMED"
+          },
+          {
+            "mLogLevel": "DEBUG",
+            "mPid": "20572",
+            "mTid": "20572",
+            "mAppName": "",
+            "mTag": "LifecycleMonitor",
+            "mTime": "05-11 02:20:36.799",
+            "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.gist.TopActivity@23888b7a in: PAUSED"
+          },
+          {
+            "mLogLevel": "INFO",
+            "mPid": "20572",
+            "mTid": "20589",
+            "mAppName": "",
+            "mTag": "TestRunner",
+            "mTime": "05-11 02:20:36.805",
+            "mMessage": "finished: toolbar_isDisplayed(htoyama.githaru.presentation.view.gist.TopActivityTest)"
+          }
+        ]
+      }
+    ]
+  ],
+  "started": 1431278363762,
+  "duration": 21,
+  "exceptions": []
+}

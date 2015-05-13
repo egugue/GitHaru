@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="htoyama.githaru.test" tests="20" failures="0" errors="0" skipped="1" time="14.991" timestamp="2015-05-10T17:19:45" hostname="localhost">
+  <properties />
+  <testcase name="checkPermissino_if" classname="htoyama.githaru.PermissionTest" time="0.002">
+    <skipped />
+  </testcase>
+  <testcase name="title_setGivenTitle_whenTileIsSet" classname="htoyama.githaru.presentation.view.gist.GistCardViewTest" time="0.0" />
+  <testcase name="title_setIdWithPrefixGist_whenTileIsEmpty" classname="htoyama.githaru.presentation.view.gist.GistCardViewTest" time="0.026" />
+  <testcase name="saveButton_disable_whenJustStartingInStateOfCreateGist" classname="htoyama.githaru.presentation.view.gist.GistEditActivityTest" time="1.602" />
+  <testcase name="scenario" classname="htoyama.githaru.presentation.view.gist.GistEditActivityTest" time="4.872" />
+  <testcase name="bind_fileIsEmpty_whenFileListIsEmpty" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.001" />
+  <testcase name="bind_fileIsSetGivenFile_whenFileListIsSet" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.027" />
+  <testcase name="bind_titleIsSetGivenTitle_whenGivenTitleIsSet" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.0" />
+  <testcase name="bind_titleIsSetIdWithPrefixGist_whenTitleIsEmpty" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.026" />
+  <testcase name="isValid_emitFalse_whenGitTitleAndFileContentAreEmpty" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.001" />
+  <testcase name="isValid_emitFalse_whenGitTitleIsSetButFileContentIsEmpty" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.001" />
+  <testcase name="isValid_emitTrue_whenGitTitleAndFileContentAreSet" classname="htoyama.githaru.presentation.view.gist.GistEditViewTest" time="0.0" />
+  <testcase name="destroy_unsubscribe_whenDestroyInvoked" classname="htoyama.githaru.presentation.view.gist.GistListPresenterTest" time="0.102" />
+  <testcase name="loadGistList_GivenFalse_whenFailure" classname="htoyama.githaru.presentation.view.gist.GistListPresenterTest" time="0.077" />
+  <testcase name="loadGistList_GivenFalse_whenSuccess" classname="htoyama.githaru.presentation.view.gist.GistListPresenterTest" time="0.053" />
+  <testcase name="loadGistList_GivenTrue_whenFailure" classname="htoyama.githaru.presentation.view.gist.GistListPresenterTest" time="0.078" />
+  <testcase name="loadGistList_GivenTrue_whenSuccess" classname="htoyama.githaru.presentation.view.gist.GistListPresenterTest" time="0.114" />
+  <testcase name="drawer_closeDrawer_whenBackKeyPressedInStateOfOpenDrawer" classname="htoyama.githaru.presentation.view.gist.TopActivityTest" time="4.981" />
+  <testcase name="scenario" classname="htoyama.githaru.presentation.view.gist.TopActivityTest" time="2.126" />
+  <testcase name="toolbar_isDisplayed" classname="htoyama.githaru.presentation.view.gist.TopActivityTest" time="0.598" />
+</testsuite>
