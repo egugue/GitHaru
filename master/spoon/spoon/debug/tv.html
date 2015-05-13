@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>presentation spoonDebugAndroidTest</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link href="static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="static/spoon.css" rel="stylesheet">
+        <link href="static/nivo-slider.css" rel="stylesheet">
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/jquery.nivo.slider.pack.js"></script>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1 id="title"></h1>
+                <p id="subtitle"></p>
+            </div>
+
+            <div class="row">
+                <div id="test-info" class="span6">
+                    <!-- Current test information -->
+                    <div id="current-test-info" class="test-result">
+                        <h1 id="test-name"></h1>
+                        <h3 id="test-class-name"></h3>
+                        <h3 id="caption"></h3>
+                    </div>
+
+                    <!-- Overall test information -->
+                    <div id="overall-test-info">
+                        <p>Displaying test <span id="current-test-number">0</span> of <span id="total-test-size">0</span></p>
+                        <p>Tests executed on <span id="test-date">月曜日, 5月 11, 2:19 午前</span>, in <span id="duration">2 minutes, 15 seconds</span></p>
+                    </div>
+                </div>
+                <div id="slider-wrapper" class="theme-default span6">
+                    <div id="slider" class="nivoSlider"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var devices = [
+  {
+    "serial": "192_168_56_101_5555",
+    "name": "Genymotion Google Nexus 5 - 4.4.4 - API 19 - 1080x1920",
+    "details": "Running Android 4.4.4 (API 19) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "GistEditActivityTest",
+        "methodPrettyName": "Save Button ,disable ,when Just Starting In State Of Create Gist",
+        "serial": "192_168_56_101_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 9,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.GistEditActivityTest/saveButton_disable_whenJustStartingInStateOfCreateGist/1431278371166_start.png",
+            "caption": "Start"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "GistEditActivityTest",
+        "methodPrettyName": "Scenario",
+        "serial": "192_168_56_101_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 10,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278372054_start__check_if_button_is_disable.png",
+            "caption": "Start Check If Button Is Disable"
+          },
+          {
+            "id": 11,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278373130_type_gist_title.png",
+            "caption": "Type Gist Title"
+          },
+          {
+            "id": 12,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278374063_type_file_title.png",
+            "caption": "Type File Title"
+          },
+          {
+            "id": 13,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278375794_typed_file_content.png",
+            "caption": "Typed File Content"
+          },
+          {
+            "id": 14,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278376126_finish__check_if_button_change_enable.png",
+            "caption": "Finish Check If Button Change Enable"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "TopActivityTest",
+        "methodPrettyName": "Scenario",
+        "serial": "192_168_56_101_5555",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 15,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278382629_start_activity.png",
+            "caption": "Start Activity"
+          },
+          {
+            "id": 16,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278383338_open_drawer.png",
+            "caption": "Open Drawer"
+          },
+          {
+            "id": 17,
+            "path": "image/192_168_56_101_5555/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278384073_close_drawer.png",
+            "caption": "Close Drawer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "CB5A1NN1EX",
+    "name": "Sony SO-02E",
+    "details": "Running Android 4.1.2 (API 16) with locale ja-JP",
+    "testResults": [
+      {
+        "classSimpleName": "GistEditActivityTest",
+        "methodPrettyName": "Save Button ,disable ,when Just Starting In State Of Create Gist",
+        "serial": "CB5A1NN1EX",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 0,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.GistEditActivityTest/saveButton_disable_whenJustStartingInStateOfCreateGist/1431278379042_start.png",
+            "caption": "Start"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "GistEditActivityTest",
+        "methodPrettyName": "Scenario",
+        "serial": "CB5A1NN1EX",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 1,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278380451_start__check_if_button_is_disable.png",
+            "caption": "Start Check If Button Is Disable"
+          },
+          {
+            "id": 2,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278382479_type_gist_title.png",
+            "caption": "Type Gist Title"
+          },
+          {
+            "id": 3,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278384342_type_file_title.png",
+            "caption": "Type File Title"
+          },
+          {
+            "id": 4,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278387883_typed_file_content.png",
+            "caption": "Typed File Content"
+          },
+          {
+            "id": 5,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278388839_finish__check_if_button_change_enable.png",
+            "caption": "Finish Check If Button Change Enable"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "TopActivityTest",
+        "methodPrettyName": "Scenario",
+        "serial": "CB5A1NN1EX",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 6,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278396603_start_activity.png",
+            "caption": "Start Activity"
+          },
+          {
+            "id": 7,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278397995_open_drawer.png",
+            "caption": "Open Drawer"
+          },
+          {
+            "id": 8,
+            "path": "image/CB5A1NN1EX/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278399245_close_drawer.png",
+            "caption": "Close Drawer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "HT4BHJT01814",
+    "name": "htc Nexus 9",
+    "details": "Running Android 5.0.1 (API 21) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "GistEditActivityTest",
+        "methodPrettyName": "Save Button ,disable ,when Just Starting In State Of Create Gist",
+        "serial": "HT4BHJT01814",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 18,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/saveButton_disable_whenJustStartingInStateOfCreateGist/1431278417434_start.png",
+            "caption": "Start"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "GistEditActivityTest",
+        "methodPrettyName": "Scenario",
+        "serial": "HT4BHJT01814",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 19,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278419164_start__check_if_button_is_disable.png",
+            "caption": "Start Check If Button Is Disable"
+          },
+          {
+            "id": 20,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278421638_type_gist_title.png",
+            "caption": "Type Gist Title"
+          },
+          {
+            "id": 21,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278422827_type_file_title.png",
+            "caption": "Type File Title"
+          },
+          {
+            "id": 22,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278425201_typed_file_content.png",
+            "caption": "Typed File Content"
+          },
+          {
+            "id": 23,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.GistEditActivityTest/scenario/1431278425608_finish__check_if_button_change_enable.png",
+            "caption": "Finish Check If Button Change Enable"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "TopActivityTest",
+        "methodPrettyName": "Scenario",
+        "serial": "HT4BHJT01814",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 24,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278433785_start_activity.png",
+            "caption": "Start Activity"
+          },
+          {
+            "id": 25,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278434637_open_drawer.png",
+            "caption": "Open Drawer"
+          },
+          {
+            "id": 26,
+            "path": "image/HT4BHJT01814/htoyama.githaru.presentation.view.gist.TopActivityTest/scenario/1431278435424_close_drawer.png",
+            "caption": "Close Drawer"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+            function updateDevice(device) {
+                $('#title').text(device.name);
+                $('#subtitle').text(device.details);
+                $('#total-test-size').text(device.testResults.length)
+
+                testResultIndex = 0
+                updateTest(device.testResults[testResultIndex]);
+            }
+
+            function updateTest(testResult) {
+                $('#current-test-info').removeClass('pass fail error')
+                $('#current-test-info').addClass(testResult.status)
+                $('#test-name').text(testResult.methodPrettyName)
+                $('#test-class-name').text(testResult.classSimpleName)
+
+                $("#slider").empty();
+                $.each(testResult.screenshots, function(index, screenshot) {
+                    tag = '<img alt="' + screenshot.caption + '" src="' + screenshot.path + '" />'
+                    $('#slider').append(tag)
+                });
+
+                $('#current-test-number').text(testResultIndex + 1)
+                screenshotIndex = 0
+
+                // Re-initialize the slider with the new slides
+                $('#slider').nivoSlider({
+                    effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    directionNav: false, // Next & Prev navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    beforeChange: function(){ // Triggers before a slide transition
+                        screenshotIndex++
+                        if(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex]) {
+                            $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                        }
+                    },
+                    lastSlide: function(){ // Triggers when last slide is shown
+                        $('#caption').text("")
+                    },
+                    afterLoad: function(){ // Triggers when slider has loaded
+                        $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                    },
+                    slideshowEnd: function() { // Triggers after all slides have been shown
+                        nextTestResult()
+                    }
+                });
+
+                // There's a bug in Nivo where it doesn't know what to do w/ only one screenshot.
+                if(testResult.screenshots.length == 1) {
+                    window.setTimeout(nextTestResult, 3000)
+                }
+            }
+
+            function nextTestResult() {
+                $('#slider').data('nivoslider').stop();
+                $('#slider-wrapper').empty()
+                $('#slider-wrapper').append($('<div id="slider" class="nivoSlider"/>'))
+
+                testResultIndex++
+                tests = devices[deviceIndex].testResults
+                if(testResultIndex < tests.length) {
+                    updateTest(tests[testResultIndex])
+                } else {
+                    nextDevice()
+                }
+            }
+
+            function nextDevice() {
+                if(deviceIndex == devices.length - 1) {
+                    location.reload() // Reload at end to load new spoon results.
+                } else {
+                    deviceIndex++
+                    updateDevice(devices[deviceIndex])
+                }
+            }
+
+            // If we start feeling fancy we could create an actual class. Until then, we're global.
+            var deviceIndex = 0;
+            var testResultIndex = 0;
+            var screenshotIndex = 0;
+
+            // Start it off
+            $(function() {
+                updateDevice(devices[deviceIndex]);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,3740 @@
+{
+  "title": "presentation debugAndroidTest",
+  "started": 1430845853253,
+  "duration": 39,
+  "results": {
+    "CB5A1NN1EX": {
+      "installFailed": false,
+      "deviceDetails": {
+        "model": "SO-02E",
+        "manufacturer": "Sony",
+        "version": "4.1.2",
+        "apiLevel": 16,
+        "language": "ja",
+        "region": "JP",
+        "isEmulator": false
+      },
+      "testResults": [
+        [
+          {
+            "className": "htoyama.githaru.ApplicationTest",
+            "methodName": "testAndroidTestCaseSetupProperly"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "started: testAndroidTestCaseSetupProperly(htoyama.githaru.ApplicationTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "finished: testAndroidTestCaseSetupProperly(htoyama.githaru.ApplicationTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.ApplicationTest",
+            "methodName": "testApplicationTestCaseSetUpProperly"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "started: testApplicationTestCaseSetUpProperly(htoyama.githaru.ApplicationTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "finished: testApplicationTestCaseSetUpProperly(htoyama.githaru.ApplicationTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.activity.TopActivityTest",
+            "methodName": "hoge"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError",
+              "message": "\u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view.\nExpected: with text: is \"hoge\"\nGot: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1080, height\u003d168, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\"",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 591,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 82,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 53,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 184,
+                  "methodName": "runSynchronouslyOnUiThread",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 158,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "htoyama.githaru.presentation.view.activity.TopActivityTest",
+                  "fileName": "TopActivityTest.java",
+                  "line": 70,
+                  "methodName": "hoge",
+                  "isNative": false
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "line": 0,
+                  "methodName": "invokeNative",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "fileName": "Method.java",
+                  "line": 511,
+                  "methodName": "invoke",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod$1",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 45,
+                  "methodName": "runReflectiveCall",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.model.ReflectiveCallable",
+                  "fileName": "ReflectiveCallable.java",
+                  "line": 15,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 42,
+                  "methodName": "invokeExplosively",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.InvokeMethod",
+                  "fileName": "InvokeMethod.java",
+                  "line": 20,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.RunBefores",
+                  "fileName": "RunBefores.java",
+                  "line": 28,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.statement.UiThreadStatement",
+                  "fileName": "UiThreadStatement.java",
+                  "line": 55,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.rule.ActivityTestRule$ActivityStatement",
+                  "fileName": "ActivityTestRule.java",
+                  "line": 257,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.rules.RunRules",
+                  "fileName": "RunRules.java",
+                  "line": 18,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 263,
+                  "methodName": "runLeaf",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 68,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 47,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 231,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 60,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 229,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 50,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 222,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 300,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 128,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 24,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 231,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 60,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 229,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 50,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 222,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 300,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 157,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 136,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.runner.TestExecutor",
+                  "fileName": "TestExecutor.java",
+                  "line": 54,
+                  "methodName": "execute",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.runner.AndroidJUnitRunner",
+                  "fileName": "AndroidJUnitRunner.java",
+                  "line": 228,
+                  "methodName": "onStart",
+                  "isNative": false
+                },
+                {
+                  "className": "android.app.Instrumentation$InstrumentationThread",
+                  "fileName": "Instrumentation.java",
+                  "line": 1584,
+                  "methodName": "run",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "junit.framework.AssertionFailedError",
+                "message": "\u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view.\nExpected: with text: is \"hoge\"\nGot: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1080, height\u003d168, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\"",
+                "elements": [
+                  {
+                    "className": "android.support.test.espresso.matcher.ViewMatchers",
+                    "fileName": "ViewMatchers.java",
+                    "line": 1013,
+                    "methodName": "assertThat",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.support.test.espresso.assertion.ViewAssertions$2",
+                    "fileName": "ViewAssertions.java",
+                    "line": 89,
+                    "methodName": "check",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.support.test.espresso.ViewInteraction$2",
+                    "fileName": "ViewInteraction.java",
+                    "line": 170,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.Executors$RunnableAdapter",
+                    "fileName": "Executors.java",
+                    "line": 442,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask$Sync",
+                    "fileName": "FutureTask.java",
+                    "line": 305,
+                    "methodName": "innerRun",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 137,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 615,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 92,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 213,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 4791,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invokeNative",
+                    "isNative": true
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "fileName": "Method.java",
+                    "line": 511,
+                    "methodName": "invoke",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit$MethodAndArgsCaller",
+                    "fileName": "ZygoteInit.java",
+                    "line": 789,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 556,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "dalvik.system.NativeStart",
+                    "line": 0,
+                    "methodName": "main",
+                    "isNative": true
+                  }
+                ]
+              }
+            },
+            "duration": 5,
+            "screenshots": [
+              "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/debug/image/CB5A1NN1EX/htoyama.githaru.presentation.view.activity.TopActivityTest/hoge/1430845870605_start.png"
+            ],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "started: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:09.435",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "ActivityInstrumentationRule",
+                "mTime": "05-06 02:11:09.455",
+                "mMessage": "Launching activity htoyama.githaru.presentation.view.activity.TopActivity"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31732",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:09.465",
+                "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:09.615",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@42739710 in: PRE_ON_CREATE"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "ViewUtils",
+                "mTime": "05-06 02:11:09.866",
+                "mMessage": "app:theme is now deprecated. Please move to using android:theme instead."
+              },
+              {
+                "mLogLevel": "WARN",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.026",
+                "mMessage": "VFY: unable to resolve virtual method 14717: Landroid/view/ViewGroup;.onRtlPropertiesChanged (I)V"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "ViewUtils",
+                "mTime": "05-06 02:11:10.026",
+                "mMessage": "app:theme is now deprecated. Please move to using android:theme instead."
+              },
+              {
+                "mLogLevel": "WARN",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.036",
+                "mMessage": "VFY: unable to resolve virtual method 413: Landroid/content/res/TypedArray;.getChangingConfigurations ()I"
+              },
+              {
+                "mLogLevel": "WARN",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.036",
+                "mMessage": "VFY: unable to resolve virtual method 435: Landroid/content/res/TypedArray;.getType (I)I"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:10.106",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@42739710 in: CREATED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:10.106",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@42739710 in: STARTED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:10.106",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@42739710 in: RESUMED"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-EGL",
+                "mTime": "05-06 02:11:10.136",
+                "mMessage": "\u003cqeglDrvAPI_eglInitialize:269\u003e: EGL 1.4 QUALCOMM build:  (CL3050818)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-EGL",
+                "mTime": "05-06 02:11:10.136",
+                "mMessage": "Build Date: 01/18/13 Fri"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-EGL",
+                "mTime": "05-06 02:11:10.136",
+                "mMessage": "Local Branch: final_sony_post_CS7"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-EGL",
+                "mTime": "05-06 02:11:10.136",
+                "mMessage": "Remote Branch: "
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-EGL",
+                "mTime": "05-06 02:11:10.136",
+                "mMessage": "Local Patches: "
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-EGL",
+                "mTime": "05-06 02:11:10.136",
+                "mMessage": "Reconstruct Branch: "
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-C2D",
+                "mTime": "05-06 02:11:10.166",
+                "mMessage": "\u003cc2d_wrapper_init:121\u003e: C2D2 initializing a3xx version: libc2d2_a3xx.so"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-C2D",
+                "mTime": "05-06 02:11:10.166",
+                "mMessage": "\u003cc2d_wrapper_init:183\u003e: C2D2 wrapper initialized successfully"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "Adreno200-C2D",
+                "mTime": "05-06 02:11:10.166",
+                "mMessage": "\u003cc2d_cmd_res_init:104\u003e: Allocate CMD Buffer Address  0x63b43000 0x1009a000 "
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.256",
+                "mMessage": "GC_FOR_ALLOC freed 1795K, 33% free 19834K/29315K, paused 24ms, total 24ms"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.276",
+                "mMessage": "GC_FOR_ALLOC freed 15K, 33% free 19856K/29315K, paused 18ms, total 18ms"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.616",
+                "mMessage": "GC_FOR_ALLOC freed 31K, 33% free 19919K/29383K, paused 22ms, total 22ms"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31708",
+                "mAppName": "",
+                "mTag": "dalvikvm",
+                "mTime": "05-06 02:11:10.717",
+                "mMessage": "GC_CONCURRENT freed 2K, 26% free 27424K/36935K, paused 24ms+15ms, total 70ms"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "Spoon",
+                "mTime": "05-06 02:11:11.257",
+                "mMessage": "Captured screenshot \u0027start\u0027."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "InputManagerEventInjectionStrategy",
+                "mTime": "05-06 02:11:14.370",
+                "mMessage": "Creating injection strategy with input manager."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.511",
+                "mMessage": "failed: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.511",
+                "mMessage": "----- begin exception -----"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: \u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "Expected: with text: is \"hoge\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "     Got: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1080, height\u003d168, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat dalvik.system.VMStack.getThreadStackTrace(Native Method)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat java.lang.Thread.getStackTrace(Thread.java:591)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:82)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:53)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat htoyama.githaru.presentation.view.activity.TopActivityTest.hoge(TopActivityTest.java:70)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat java.lang.reflect.Method.invokeNative(Native Method)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat java.lang.reflect.Method.invoke(Method.java:511)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:257)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.rules.RunRules.evaluate(RunRules.java:18)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.Suite.runChild(Suite.java:128)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.Suite.runChild(Suite.java:24)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runner.JUnitCore.run(JUnitCore.java:157)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat org.junit.runner.JUnitCore.run(JUnitCore.java:136)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:228)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "Caused by: junit.framework.AssertionFailedError: \u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "Expected: with text: is \"hoge\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "     Got: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1080, height\u003d168, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.support.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:1013)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "\tat android.su"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.521",
+                "mMessage": "----- end exception -----"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:14.551",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@42739710 in: PAUSED"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.561",
+                "mMessage": "finished: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.widget.GistCardViewTest",
+            "methodName": "title_setGivenTitle_whenTileIsSet"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.811",
+                "mMessage": "started: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:14.831",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.851",
+                "mMessage": "finished: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.widget.GistCardViewTest",
+            "methodName": "title_setIdWithPrefixGist_whenTileIsEmpty"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.851",
+                "mMessage": "started: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31706",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:14.851",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "31706",
+                "mTid": "31721",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:14.861",
+                "mMessage": "finished: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              }
+            ]
+          }
+        ]
+      ],
+      "started": 1430845855431,
+      "duration": 6,
+      "exceptions": []
+    },
+    "192_168_56_101_5555": {
+      "installFailed": false,
+      "deviceDetails": {
+        "model": "Google Nexus 6 - 5.0.0 - API 21 - 1440x2560",
+        "manufacturer": "Genymotion",
+        "version": "5.0",
+        "apiLevel": 21,
+        "language": "en",
+        "region": "US",
+        "isEmulator": false
+      },
+      "testResults": [
+        [
+          {
+            "className": "htoyama.githaru.ApplicationTest",
+            "methodName": "testAndroidTestCaseSetupProperly"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:07.104",
+                "mMessage": "started: testAndroidTestCaseSetupProperly(htoyama.githaru.ApplicationTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-05 17:11:07.105",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:07.105",
+                "mMessage": "finished: testAndroidTestCaseSetupProperly(htoyama.githaru.ApplicationTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.ApplicationTest",
+            "methodName": "testApplicationTestCaseSetUpProperly"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:07.101",
+                "mMessage": "started: testApplicationTestCaseSetUpProperly(htoyama.githaru.ApplicationTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-05 17:11:07.103",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:07.103",
+                "mMessage": "finished: testApplicationTestCaseSetUpProperly(htoyama.githaru.ApplicationTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.activity.TopActivityTest",
+            "methodName": "hoge"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError",
+              "message": "\u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view.\nExpected: with text: is \"hoge\"\nGot: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1440, height\u003d196, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\"",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 580,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 82,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 53,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 184,
+                  "methodName": "runSynchronouslyOnUiThread",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 158,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "htoyama.githaru.presentation.view.activity.TopActivityTest",
+                  "fileName": "TopActivityTest.java",
+                  "line": 70,
+                  "methodName": "hoge",
+                  "isNative": false
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "line": 0,
+                  "methodName": "invoke",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "fileName": "Method.java",
+                  "line": 372,
+                  "methodName": "invoke",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod$1",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 45,
+                  "methodName": "runReflectiveCall",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.model.ReflectiveCallable",
+                  "fileName": "ReflectiveCallable.java",
+                  "line": 15,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 42,
+                  "methodName": "invokeExplosively",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.InvokeMethod",
+                  "fileName": "InvokeMethod.java",
+                  "line": 20,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.RunBefores",
+                  "fileName": "RunBefores.java",
+                  "line": 28,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.statement.UiThreadStatement",
+                  "fileName": "UiThreadStatement.java",
+                  "line": 55,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.rule.ActivityTestRule$ActivityStatement",
+                  "fileName": "ActivityTestRule.java",
+                  "line": 257,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.rules.RunRules",
+                  "fileName": "RunRules.java",
+                  "line": 18,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 263,
+                  "methodName": "runLeaf",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 68,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 47,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 231,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 60,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 229,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 50,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 222,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 300,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 128,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 24,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 231,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 60,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 229,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 50,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 222,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 300,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 157,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 136,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.runner.TestExecutor",
+                  "fileName": "TestExecutor.java",
+                  "line": 54,
+                  "methodName": "execute",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.runner.AndroidJUnitRunner",
+                  "fileName": "AndroidJUnitRunner.java",
+                  "line": 228,
+                  "methodName": "onStart",
+                  "isNative": false
+                },
+                {
+                  "className": "android.app.Instrumentation$InstrumentationThread",
+                  "fileName": "Instrumentation.java",
+                  "line": 1837,
+                  "methodName": "run",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "junit.framework.AssertionFailedError",
+                "message": "\u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view.\nExpected: with text: is \"hoge\"\nGot: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1440, height\u003d196, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\"",
+                "elements": [
+                  {
+                    "className": "android.support.test.espresso.matcher.ViewMatchers",
+                    "fileName": "ViewMatchers.java",
+                    "line": 1013,
+                    "methodName": "assertThat",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.support.test.espresso.assertion.ViewAssertions$2",
+                    "fileName": "ViewAssertions.java",
+                    "line": 89,
+                    "methodName": "check",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.support.test.espresso.ViewInteraction$2",
+                    "fileName": "ViewInteraction.java",
+                    "line": 170,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.Executors$RunnableAdapter",
+                    "fileName": "Executors.java",
+                    "line": 422,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 237,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 739,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 95,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 135,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 5221,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "fileName": "Method.java",
+                    "line": 372,
+                    "methodName": "invoke",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit$MethodAndArgsCaller",
+                    "fileName": "ZygoteInit.java",
+                    "line": 899,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 694,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 5,
+            "screenshots": [
+              "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/debug/image/192_168_56_101_5555/htoyama.githaru.presentation.view.activity.TopActivityTest/hoge/1430845868143_start.png"
+            ],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:07.106",
+                "mMessage": "started: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-05 17:11:07.107",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "ActivityInstrumentationRule",
+                "mTime": "05-05 17:11:07.120",
+                "mMessage": "Launching activity htoyama.githaru.presentation.view.activity.TopActivity"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1588",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-05 17:11:07.121",
+                "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-05 17:11:07.130",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@1ea62679 in: PRE_ON_CREATE"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "ViewUtils",
+                "mTime": "05-05 17:11:07.157",
+                "mMessage": "app:theme is now deprecated. Please move to using android:theme instead."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-05 17:11:07.194",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@1ea62679 in: CREATED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-05 17:11:07.196",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@1ea62679 in: STARTED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-05 17:11:07.196",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@1ea62679 in: RESUMED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-05 17:11:07.205",
+                "mMessage": "Render dirty regions requested: true"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "",
+                "mTime": "05-05 17:11:07.221",
+                "mMessage": "HostConnection::get() New Host Connection established 0xacf9f100, tid 1569"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "Atlas",
+                "mTime": "05-05 17:11:07.255",
+                "mMessage": "Validating map..."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "libEGL",
+                "mTime": "05-05 17:11:07.437",
+                "mMessage": "loaded /system/lib/egl/libEGL_emulation.so"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "libEGL",
+                "mTime": "05-05 17:11:07.438",
+                "mMessage": "loaded /system/lib/egl/libGLESv1_CM_emulation.so"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "libEGL",
+                "mTime": "05-05 17:11:07.446",
+                "mMessage": "loaded /system/lib/egl/libGLESv2_emulation.so"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "",
+                "mTime": "05-05 17:11:07.462",
+                "mMessage": "HostConnection::get() New Host Connection established 0xafb0b770, tid 1593"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-05 17:11:07.482",
+                "mMessage": "Initialized EGL, version 1.4"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-05 17:11:07.519",
+                "mMessage": "Enabling debug mode 0"
+              },
+              {
+                "mLogLevel": "WARN",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "EGL_emulation",
+                "mTime": "05-05 17:11:07.553",
+                "mMessage": "eglSurfaceAttrib not implemented"
+              },
+              {
+                "mLogLevel": "WARN",
+                "mPid": "1569",
+                "mTid": "1593",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-05 17:11:07.553",
+                "mMessage": "Failed to set EGL_SWAP_BEHAVIOR on surface 0xafb08ea0, error\u003dEGL_SUCCESS"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "Choreographer",
+                "mTime": "05-05 17:11:08.133",
+                "mMessage": "Skipped 30 frames!  The application may be doing too much work on its main thread."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "Spoon",
+                "mTime": "05-05 17:11:08.797",
+                "mMessage": "Captured screenshot \u0027start\u0027."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "InputManagerEventInjectionStrategy",
+                "mTime": "05-05 17:11:11.806",
+                "mMessage": "Creating injection strategy with input manager."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-05 17:11:12.666",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@1ea62679 in: PAUSED"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.666",
+                "mMessage": "failed: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.666",
+                "mMessage": "----- begin exception -----"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: \u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "Expected: with text: is \"hoge\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "     Got: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1440, height\u003d196, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat dalvik.system.VMStack.getThreadStackTrace(Native Method)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat java.lang.Thread.getStackTrace(Thread.java:580)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:82)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:53)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat htoyama.githaru.presentation.view.activity.TopActivityTest.hoge(TopActivityTest.java:70)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat java.lang.reflect.Method.invoke(Native Method)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat java.lang.reflect.Method.invoke(Method.java:372)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:257)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.rules.RunRules.evaluate(RunRules.java:18)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.Suite.runChild(Suite.java:128)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.Suite.runChild(Suite.java:24)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runner.JUnitCore.run(JUnitCore.java:157)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat org.junit.runner.JUnitCore.run(JUnitCore.java:136)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:228)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1837)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "Caused by: junit.framework.AssertionFailedError: \u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "Expected: with text: is \"hoge\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "     Got: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d1440, height\u003d196, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:1013)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "\tat android.support."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.667",
+                "mMessage": "----- end exception -----"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.668",
+                "mMessage": "finished: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.widget.GistCardViewTest",
+            "methodName": "title_setGivenTitle_whenTileIsSet"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.671",
+                "mMessage": "started: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-05 17:11:12.672",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.694",
+                "mMessage": "finished: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.widget.GistCardViewTest",
+            "methodName": "title_setIdWithPrefixGist_whenTileIsEmpty"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.703",
+                "mMessage": "started: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1569",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-05 17:11:12.704",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "1569",
+                "mTid": "1587",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-05 17:11:12.706",
+                "mMessage": "finished: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              }
+            ]
+          }
+        ]
+      ],
+      "started": 1430845855465,
+      "duration": 6,
+      "exceptions": []
+    },
+    "HT4BHJT01814": {
+      "installFailed": false,
+      "deviceDetails": {
+        "model": "Nexus 9",
+        "manufacturer": "htc",
+        "version": "5.0.1",
+        "apiLevel": 21,
+        "language": "en",
+        "region": "US",
+        "isEmulator": false
+      },
+      "testResults": [
+        [
+          {
+            "className": "htoyama.githaru.ApplicationTest",
+            "methodName": "testAndroidTestCaseSetupProperly"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:26.799",
+                "mMessage": "started: testAndroidTestCaseSetupProperly(htoyama.githaru.ApplicationTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:26.802",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:26.803",
+                "mMessage": "finished: testAndroidTestCaseSetupProperly(htoyama.githaru.ApplicationTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.ApplicationTest",
+            "methodName": "testApplicationTestCaseSetUpProperly"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:26.792",
+                "mMessage": "started: testApplicationTestCaseSetUpProperly(htoyama.githaru.ApplicationTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:26.794",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:26.795",
+                "mMessage": "finished: testApplicationTestCaseSetUpProperly(htoyama.githaru.ApplicationTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.activity.TopActivityTest",
+            "methodName": "hoge"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError",
+              "message": "\u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view.\nExpected: with text: is \"hoge\"\nGot: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d2048, height\u003d128, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\"",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 580,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 82,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 53,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 184,
+                  "methodName": "runSynchronouslyOnUiThread",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 158,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "htoyama.githaru.presentation.view.activity.TopActivityTest",
+                  "fileName": "TopActivityTest.java",
+                  "line": 70,
+                  "methodName": "hoge",
+                  "isNative": false
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "line": 0,
+                  "methodName": "invoke",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.reflect.Method",
+                  "fileName": "Method.java",
+                  "line": 372,
+                  "methodName": "invoke",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod$1",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 45,
+                  "methodName": "runReflectiveCall",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.model.ReflectiveCallable",
+                  "fileName": "ReflectiveCallable.java",
+                  "line": 15,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.model.FrameworkMethod",
+                  "fileName": "FrameworkMethod.java",
+                  "line": 42,
+                  "methodName": "invokeExplosively",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.InvokeMethod",
+                  "fileName": "InvokeMethod.java",
+                  "line": 20,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.internal.runners.statements.RunBefores",
+                  "fileName": "RunBefores.java",
+                  "line": 28,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.statement.UiThreadStatement",
+                  "fileName": "UiThreadStatement.java",
+                  "line": 55,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.rule.ActivityTestRule$ActivityStatement",
+                  "fileName": "ActivityTestRule.java",
+                  "line": 257,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.rules.RunRules",
+                  "fileName": "RunRules.java",
+                  "line": 18,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 263,
+                  "methodName": "runLeaf",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 68,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.BlockJUnit4ClassRunner",
+                  "fileName": "BlockJUnit4ClassRunner.java",
+                  "line": 47,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 231,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 60,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 229,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 50,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 222,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 300,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 128,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.Suite",
+                  "fileName": "Suite.java",
+                  "line": 24,
+                  "methodName": "runChild",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$3",
+                  "fileName": "ParentRunner.java",
+                  "line": 231,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$1",
+                  "fileName": "ParentRunner.java",
+                  "line": 60,
+                  "methodName": "schedule",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 229,
+                  "methodName": "runChildren",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 50,
+                  "methodName": "access$000",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner$2",
+                  "fileName": "ParentRunner.java",
+                  "line": 222,
+                  "methodName": "evaluate",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runners.ParentRunner",
+                  "fileName": "ParentRunner.java",
+                  "line": 300,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 157,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "org.junit.runner.JUnitCore",
+                  "fileName": "JUnitCore.java",
+                  "line": 136,
+                  "methodName": "run",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.internal.runner.TestExecutor",
+                  "fileName": "TestExecutor.java",
+                  "line": 54,
+                  "methodName": "execute",
+                  "isNative": false
+                },
+                {
+                  "className": "android.support.test.runner.AndroidJUnitRunner",
+                  "fileName": "AndroidJUnitRunner.java",
+                  "line": 228,
+                  "methodName": "onStart",
+                  "isNative": false
+                },
+                {
+                  "className": "android.app.Instrumentation$InstrumentationThread",
+                  "fileName": "Instrumentation.java",
+                  "line": 1837,
+                  "methodName": "run",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "junit.framework.AssertionFailedError",
+                "message": "\u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view.\nExpected: with text: is \"hoge\"\nGot: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d2048, height\u003d128, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\"",
+                "elements": [
+                  {
+                    "className": "android.support.test.espresso.matcher.ViewMatchers",
+                    "fileName": "ViewMatchers.java",
+                    "line": 1013,
+                    "methodName": "assertThat",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.support.test.espresso.assertion.ViewAssertions$2",
+                    "fileName": "ViewAssertions.java",
+                    "line": 89,
+                    "methodName": "check",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.support.test.espresso.ViewInteraction$2",
+                    "fileName": "ViewInteraction.java",
+                    "line": 170,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.Executors$RunnableAdapter",
+                    "fileName": "Executors.java",
+                    "line": 422,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 237,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 739,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 95,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 135,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 5221,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "fileName": "Method.java",
+                    "line": 372,
+                    "methodName": "invoke",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit$MethodAndArgsCaller",
+                    "fileName": "ZygoteInit.java",
+                    "line": 899,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 694,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 5,
+            "screenshots": [
+              "/Users/toyamaosamuyu/git/htoyama/GitHaru/presentation/build/spoon/debug/image/HT4BHJT01814/htoyama.githaru.presentation.view.activity.TopActivityTest/hoge/1430845888823_start.png"
+            ],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:26.806",
+                "mMessage": "started: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:26.808",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 0"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "ActivityInstrumentationRule",
+                "mTime": "05-06 02:11:26.850",
+                "mMessage": "Launching activity htoyama.githaru.presentation.view.activity.TopActivity"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16402",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:26.859",
+                "mMessage": "execStartActivity(context, ibinder, ibinder, activity, intent, int, bundle"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:27.003",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@2346ea99 in: PRE_ON_CREATE"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "ViewUtils",
+                "mTime": "05-06 02:11:27.120",
+                "mMessage": "app:theme is now deprecated. Please move to using android:theme instead."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:27.254",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@2346ea99 in: CREATED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:27.262",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@2346ea99 in: STARTED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:27.262",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@2346ea99 in: RESUMED"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16432",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-06 02:11:27.810",
+                "mMessage": "Render dirty regions requested: true"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "Atlas",
+                "mTime": "05-06 02:11:27.827",
+                "mMessage": "Validating map..."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16432",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-06 02:11:28.379",
+                "mMessage": "Initialized EGL, version 1.4"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16432",
+                "mAppName": "",
+                "mTag": "OpenGLRenderer",
+                "mTime": "05-06 02:11:28.533",
+                "mMessage": "Enabling debug mode 0"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "Choreographer",
+                "mTime": "05-06 02:11:28.645",
+                "mMessage": "Skipped 44 frames!  The application may be doing too much work on its main thread."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16370",
+                "mAppName": "",
+                "mTag": "art",
+                "mTime": "05-06 02:11:28.979",
+                "mMessage": "Background sticky concurrent mark sweep GC freed 23165(1305KB) AllocSpace objects, 4(76KB) LOS objects, 0% free, 23MB/23MB, paused 19.537ms total 136.979ms"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16370",
+                "mAppName": "",
+                "mTag": "art",
+                "mTime": "05-06 02:11:29.130",
+                "mMessage": "Background partial concurrent mark sweep GC freed 5237(326KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 23MB/38MB, paused 46.620ms total 139.242ms"
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "Spoon",
+                "mTime": "05-06 02:11:29.410",
+                "mMessage": "Captured screenshot \u0027start\u0027."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "InputManagerEventInjectionStrategy",
+                "mTime": "05-06 02:11:32.450",
+                "mMessage": "Creating injection strategy with input manager."
+              },
+              {
+                "mLogLevel": "DEBUG",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "LifecycleMonitor",
+                "mTime": "05-06 02:11:32.529",
+                "mMessage": "Lifecycle status change: htoyama.githaru.presentation.view.activity.TopActivity@2346ea99 in: PAUSED"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.532",
+                "mMessage": "failed: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.532",
+                "mMessage": "----- begin exception -----"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: \u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "Expected: with text: is \"hoge\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "     Got: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d2048, height\u003d128, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat dalvik.system.VMStack.getThreadStackTrace(Native Method)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat java.lang.Thread.getStackTrace(Thread.java:580)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:82)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:53)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat htoyama.githaru.presentation.view.activity.TopActivityTest.hoge(TopActivityTest.java:70)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat java.lang.reflect.Method.invoke(Native Method)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat java.lang.reflect.Method.invoke(Method.java:372)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:257)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.rules.RunRules.evaluate(RunRules.java:18)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.Suite.runChild(Suite.java:128)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.Suite.runChild(Suite.java:24)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runners.ParentRunner.run(ParentRunner.java:300)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runner.JUnitCore.run(JUnitCore.java:157)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat org.junit.runner.JUnitCore.run(JUnitCore.java:136)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:54)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:228)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1837)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "Caused by: junit.framework.AssertionFailedError: \u0027with text: is \"hoge\"\u0027 doesn\u0027t match the selected view."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "Expected: with text: is \"hoge\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "     Got: \"Toolbar{id\u003d2131492943, res-name\u003dtoolbar, visibility\u003dVISIBLE, width\u003d2048, height\u003d128, has-focus\u003dfalse, has-focusable\u003dtrue, has-window-focus\u003dtrue, is-clickable\u003dfalse, is-enabled\u003dtrue, is-focused\u003dfalse, is-focusable\u003dfalse, is-layout-requested\u003dfalse, is-selected\u003dfalse, root-is-layout-requested\u003dfalse, has-input-connection\u003dfalse, x\u003d0.0, y\u003d0.0, child-count\u003d2}\""
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:1013)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "\tat android.support."
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.534",
+                "mMessage": "----- end exception -----"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.535",
+                "mMessage": "finished: hoge(htoyama.githaru.presentation.view.activity.TopActivityTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.widget.GistCardViewTest",
+            "methodName": "title_setGivenTitle_whenTileIsSet"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.550",
+                "mMessage": "started: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:32.556",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.573",
+                "mMessage": "finished: title_setGivenTitle_whenTileIsSet(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "className": "htoyama.githaru.presentation.view.widget.GistCardViewTest",
+            "methodName": "title_setIdWithPrefixGist_whenTileIsEmpty"
+          },
+          {
+            "status": "PASS",
+            "duration": 0,
+            "screenshots": [],
+            "log": [
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.575",
+                "mMessage": "started: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16355",
+                "mAppName": "",
+                "mTag": "MonitoringInstrumentation",
+                "mTime": "05-06 02:11:32.576",
+                "mMessage": "Activities that are still in CREATED to PAUSED: 1"
+              },
+              {
+                "mLogLevel": "INFO",
+                "mPid": "16355",
+                "mTid": "16398",
+                "mAppName": "",
+                "mTag": "TestRunner",
+                "mTime": "05-06 02:11:32.579",
+                "mMessage": "finished: title_setIdWithPrefixGist_whenTileIsEmpty(htoyama.githaru.presentation.view.widget.GistCardViewTest)"
+              }
+            ]
+          }
+        ]
+      ],
+      "started": 1430845855379,
+      "duration": 7,
+      "exceptions": []
+    }
+  }
+}
