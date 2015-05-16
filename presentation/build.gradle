@@ -11,6 +11,7 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'spoon'
+apply from: rootProject.file('gradle/javadoc.gradle')
 
 // This section is optional
 spoon {
