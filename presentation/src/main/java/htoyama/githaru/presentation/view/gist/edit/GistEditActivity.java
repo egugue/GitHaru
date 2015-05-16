@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.gist;
+package htoyama.githaru.presentation.view.gist.edit;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import java.util.concurrent.TimeUnit;
-
 import javax.inject.Inject;
 
 import htoyama.githaru.domain.entity.Gist;
@@ -20,6 +18,8 @@ import htoyama.githaru.domain.usecase.gist.GetGistDetail;
 import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
 import htoyama.githaru.presentation.view.common.activity.BaseActivity;
+import htoyama.githaru.presentation.view.gist.DaggerGistComponent;
+import htoyama.githaru.presentation.view.gist.top.TopActivity;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;

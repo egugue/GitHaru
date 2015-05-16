@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.gist;
+package htoyama.githaru.presentation.view.gist.top;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ import rx.subscriptions.CompositeSubscription;
  * Presenter for managing to show {@link Gist} list.
  */
 @PerActivity
-public class GistListPresenter implements Presenter {
+class GistListPresenter implements Presenter {
     private final GetGistList mGetGistList;
     private final CompositeSubscription mSubscriptions = new CompositeSubscription();
     private GistListView mView;

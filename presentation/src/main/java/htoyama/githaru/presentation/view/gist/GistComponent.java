@@ -5,6 +5,8 @@ import htoyama.githaru.presentation.AppComponent;
 import htoyama.githaru.presentation.view.common.di.AbstractActivityComponent;
 import htoyama.githaru.presentation.view.common.di.ActivityModule;
 import htoyama.githaru.presentation.view.common.di.PerActivity;
+import htoyama.githaru.presentation.view.gist.edit.GistEditActivity;
+import htoyama.githaru.presentation.view.gist.top.TopActivity;
 
 /**
  * A {@link Component} related gist.

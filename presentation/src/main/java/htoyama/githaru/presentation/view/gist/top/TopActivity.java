@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.gist;
+package htoyama.githaru.presentation.view.gist.top;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,6 +22,8 @@ import htoyama.githaru.presentation.GitharuApp;
 import htoyama.githaru.presentation.R;
 import htoyama.githaru.presentation.view.common.activity.BaseActivity;
 import htoyama.githaru.presentation.view.common.widget.recyclerview.SlideInItemAnimator;
+import htoyama.githaru.presentation.view.gist.DaggerGistComponent;
+import htoyama.githaru.presentation.view.gist.edit.GistEditActivity;
 
 
 public class TopActivity extends BaseActivity implements GistListView {

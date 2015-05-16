@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.gist;
+package htoyama.githaru.presentation.view.gist.edit;
 
 import android.content.Context;
 import android.text.Editable;
