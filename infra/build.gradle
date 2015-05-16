@@ -39,9 +39,12 @@ dependencies {
     compile le.retrofit
     compile le.okhttp
 
+    compile 'io.realm:realm-android:0.80.0'
+
     compile le.commonLang
     debugCompile 'com.squareup.retrofit:retrofit-mock:1.9.0'
 
     testCompile le.junit
     testCompile le.mockito
+
 }
