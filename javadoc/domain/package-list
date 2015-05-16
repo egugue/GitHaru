@@ -1,0 +1,5 @@
+htoyama.githaru.domain
+htoyama.githaru.domain.entity
+htoyama.githaru.domain.exception
+htoyama.githaru.domain.repository
+htoyama.githaru.domain.usecase.gist
