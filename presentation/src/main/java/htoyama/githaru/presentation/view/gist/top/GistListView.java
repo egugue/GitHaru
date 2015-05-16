@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.gist;
+package htoyama.githaru.presentation.view.gist.top;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import htoyama.githaru.domain.entity.Gist;
 /**
 * Interface for show List of {@link Gist}.
 */
-public interface GistListView {
+interface GistListView {
 
     /**
      * Show pregress view while retriving data.

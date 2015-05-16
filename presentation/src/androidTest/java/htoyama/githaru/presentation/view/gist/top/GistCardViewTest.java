@@ -1,4 +1,4 @@
-package htoyama.githaru.presentation.view.gist;
+package htoyama.githaru.presentation.view.gist.top;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
