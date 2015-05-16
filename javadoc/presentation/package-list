@@ -5,3 +5,5 @@ htoyama.githaru.presentation.view.common.activity
 htoyama.githaru.presentation.view.common.di
 htoyama.githaru.presentation.view.common.widget.recyclerview
 htoyama.githaru.presentation.view.gist
+htoyama.githaru.presentation.view.gist.edit
+htoyama.githaru.presentation.view.gist.top
